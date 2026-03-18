@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian M. Peticila</title>
+  <meta name="description" content="CMO. Brand strategist. Founder of Aah, Monster! 20+ years making brands mean something.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+
+    /* ── TOKENS ──────────────────────────────────── */
+    :root {
+      --bg:      #060606;
+      --bg2:     #0F0F0F;
+      --bg3:     #181818;
+      --fg:      #F0EBE0;
+      --mid:     #888880;
+      --faint:   #3A3A38;
+      --red:     #D42020;
+      --rule:    #1A1A1A;
+      --display: 'Bebas Neue', sans-serif;
+      --body:    'Bricolage Grotesque', sans-serif;
+      --mono:    'DM Mono', monospace;
+    }
+    [data-theme="light"] {
+      --bg:      #F5F4EF;
+      --bg2:     #ECEAE4;
+      --bg3:     #E2E0DA;
+      --fg:      #060606;
+      --mid:     #555550;
+      --faint:   #C0BEB8;
+      --rule:    #D8D6D0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--body);
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      transition: background .3s, color .3s;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ─────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.1rem 2.5rem;
+      border-bottom: 1px solid var(--rule);
+      background: var(--bg);
+      transition: background .3s;
+    }
+    .nav-id {
+      font-family: var(--mono);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .nav-r { display: flex; align-items: center; gap: 2rem; }
+    .nav-a {
+      font-family: var(--mono);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color .15s;
+    }
+    .nav-a:hover { color: var(--fg); }
+    .nav-theme {
+      background: none;
+      border: 1px solid var(--faint);
+      padding: .3rem .7rem;
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      cursor: pointer;
+      transition: border-color .15s, color .15s;
+    }
+    .nav-theme:hover { border-color: var(--fg); color: var(--fg); }
+
+    /* ── WRAP ────────────────────────────────────── */
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 2.5rem; }
+
+    /* ── PAGE MARKER ─────────────────────────────── */
+    .pg {
+      font-family: var(--mono);
+      font-size: .6rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 3rem;
+      display: block;
+    }
+
+    /* ── SECTION ─────────────────────────────────── */
+    .section {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .section:last-of-type { border-bottom: none; }
+
+    /* ── P.001 HERO ──────────────────────────────── */
+    #hero { padding: 10rem 0 6rem; border-bottom: 1px solid var(--rule); }
+
+    .hero-name {
+      font-family: var(--display);
+      font-size: clamp(5rem, 14vw, 11rem);
+      line-height: .92;
+      letter-spacing: .01em;
+      color: var(--fg);
+      margin-bottom: 3rem;
+    }
+    .hero-name span { color: var(--mid); }
+
+    .hero-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4rem;
+      align-items: end;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+    }
+
+    .hero-tag {
+      font-family: var(--mono);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    .hero-bio {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--mid);
+      line-height: 1.8;
+      max-width: 500px;
+    }
+    .hero-bio strong { color: var(--fg); font-weight: 600; }
+
+    .hero-photo {
+      width: 130px;
+      height: 155px;
+      background: var(--bg3);
+      overflow: hidden;
+      flex-shrink: 0;
+      filter: grayscale(25%) contrast(1.05);
+    }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .scroll-hint {
+      margin-top: 4rem;
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
+    /* ── P.002 MANIFEST ──────────────────────────── */
+    .manifest-block { margin-bottom: 4rem; }
+
+    .manifest-q {
+      font-family: var(--mono);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .manifest-statement {
+      font-family: var(--display);
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: .02em;
+      color: var(--fg);
+      margin-bottom: .5rem;
+    }
+
+    .manifest-body {
+      font-size: .9rem;
+      font-weight: 400;
+      color: var(--mid);
+      line-height: 1.8;
+      max-width: 640px;
+      margin-top: 1rem;
+    }
+
+    .manifest-list {
+      list-style: none;
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+    }
+    .manifest-list li {
+      font-size: .875rem;
+      color: var(--mid);
+      line-height: 1.65;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .manifest-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--red);
+    }
+
+    .manifest-nope {
+      margin-top: 1.25rem;
+    }
+    .manifest-nope li::before { content: '✕'; color: var(--faint); }
+
+    .manifest-divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 3rem 0;
+    }
+
+    /* ── P.003 FIND ME ───────────────────────────── */
+    .links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .link-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .7rem 1.1rem;
+      border: 1px solid var(--rule);
+      font-family: var(--mono);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      color: var(--mid);
+      transition: border-color .15s, color .15s, background .15s;
+    }
+    .link-pill:hover {
+      border-color: var(--fg);
+      color: var(--fg);
+      background: var(--bg2);
+    }
+    .link-pill svg { width: 13px; height: 13px; opacity: .65; flex-shrink: 0; }
+
+    /* ── P.004 RIGHT NOW ─────────────────────────── */
+    .now-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+    .now-item {
+      padding: 1.75rem 1.5rem;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .now-item:nth-child(3n) { border-right: none; }
+    .now-item:nth-last-child(-n+3) { border-bottom: none; }
+
+    .now-label {
+      font-family: var(--mono);
+      font-size: .6rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: .6rem;
+      display: block;
+    }
+    .now-val {
+      font-family: var(--body);
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--fg);
+      line-height: 1.45;
+    }
+    .now-sub {
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--mid);
+      margin-top: .3rem;
+      display: block;
+    }
+
+    /* ── P.005 PRESS ─────────────────────────────── */
+    .press-list { display: flex; flex-direction: column; gap: .4rem; }
+    .press-item {
+      display: grid;
+      grid-template-columns: 9rem 1fr 1.5rem;
+      gap: 1.5rem;
+      align-items: center;
+      padding: 1.5rem;
+      border: 1px solid var(--rule);
+      transition: border-color .15s, background .15s;
+    }
+    .press-item:hover { border-color: var(--faint); background: var(--bg2); }
+    .press-pub {
+      font-family: var(--mono);
+      font-size: .6rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    .press-title {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--fg);
+      line-height: 1.4;
+    }
+    .press-arr { color: var(--faint); font-size: .8rem; justify-self: end; }
+
+    /* ── FOOTER ──────────────────────────────────── */
+    footer {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--rule);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    .footer-inner a { color: var(--faint); transition: color .15s; }
+    .footer-inner a:hover { color: var(--red); }
+
+    /* ── MOBILE ──────────────────────────────────── */
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-r .nav-a { display: none; }
+      .wrap { padding: 0 1.25rem; }
+      #hero { padding: 7rem 0 4rem; }
+      .hero-row { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-photo { width: 90px; height: 110px; }
+      .now-grid { grid-template-columns: repeat(2, 1fr); }
+      .now-item:nth-child(2n) { border-right: none; }
+      .now-item:nth-child(3n) { border-right: 1px solid var(--rule); }
+      .now-item:nth-child(2n):nth-last-child(-n+2) { border-bottom: none; }
+      .press-item { grid-template-columns: 1fr 1.5rem; }
+      .press-pub { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-id">peticila.ro</span>
+    <div class="nav-r">
+      <a href="#manifest" class="nav-a">Manifest</a>
+      <a href="#now" class="nav-a">Right now</a>
+      <a href="https://aah.monster" target="_blank" rel="noopener" class="nav-a">aah.monster ↗</a>
+      <button class="nav-theme" id="themeBtn">light</button>
+    </div>
+  </nav>
+
+  <div class="wrap">
+
+    <!-- P.001 — HERO -->
+    <section id="hero">
+      <span class="pg">P. 001 — Adrian M. Peticila</span>
+      <h1 class="hero-name">Adrian<br><span>M.</span> Peticila</h1>
+      <div class="hero-row">
+        <div class="hero-meta">
+          <span class="hero-tag">CMO &mdash; Brand Strategist &mdash; Bucharest</span>
+          <p class="hero-bio">
+            <strong>20 years in marketing.</strong> Financial services, fintech, software.
+            Currently CMO. Founder of <strong>Aah, Monster!</strong>
+            a personal branding consultancy for C-suite executives
+            who are tired of being invisible.
+            Still more interested in the truth than the deck.
+          </p>
+        </div>
+        <div class="hero-photo">
+          <img src="img/adrian-nobg2.png" alt="Adrian M. Peticila" loading="eager">
+        </div>
+      </div>
+      <p class="scroll-hint">&#8595; scroll</p>
+    </section>
+
+    <!-- P.002 — MANIFEST -->
+    <section class="section" id="manifest">
+      <span class="pg">P. 002 — Manifest</span>
+
+      <div class="manifest-block">
+        <span class="manifest-q">Who I am</span>
+        <p class="manifest-statement">ROMANIAN.<br>HARDBOILED.<br>ALLERGIC TO BS.</p>
+        <p class="manifest-body">
+          I'm a marketer who thinks like a brand architect. 20 years of building brands
+          for companies. Now I apply the same rigour to individuals.
+          I'm cynical enough to tell you when your positioning is garbage,
+          and experienced enough to fix it.
+          Not a coach. Not a guru. A strategist with a track record and zero patience
+          for empty credentials.
+        </p>
+      </div>
+
+      <hr class="manifest-divider">
+
+      <div class="manifest-block">
+        <span class="manifest-q">What I'm great at</span>
+        <p class="manifest-statement">BRAND<br>ARCHITECTURE.</p>
+        <ul class="manifest-list">
+          <li>Positioning individuals and companies so they stop sounding like everyone else.</li>
+          <li>Finding the one true thing about a brand and making it impossible to ignore.</li>
+          <li>Writing copy that doesn't make me cringe three days later.</li>
+          <li>Turning 20+ years of pattern recognition into decisions that take others months to reach.</li>
+          <li>Building marketing functions from zero — strategy, team, channels, results.</li>
+        </ul>
+      </div>
+
+      <hr class="manifest-divider">
+
+      <div class="manifest-block">
+        <span class="manifest-q">How I help</span>
+        <p class="manifest-statement">DIRECT.<br>ASYNC.<br>NO FLUFF.</p>
+        <p class="manifest-body">
+          Through <a href="https://aah.monster" style="color:var(--red)">Aah, Monster!</a>
+          I work with C-suite executives and founders who need their personal brand
+          to actually mean something. No calls. No workshops.
+          Written deliverables, honest feedback, actionable outputs.
+          The same brand architecture thinking that built $50M company brands,
+          applied to you.
+        </p>
+      </div>
+
+      <hr class="manifest-divider">
+
+      <div class="manifest-block">
+        <span class="manifest-q">What I love</span>
+        <ul class="manifest-list">
+          <li>Sharp copy. The kind where every word earns its place or gets cut.</li>
+          <li>Cultural collisions — philosophy, classic rock, noir fiction, existentialism colliding with brand thinking.</li>
+          <li>Honesty in business communication. Radical, apparently.</li>
+          <li>Cynicism as a superpower. It lets you see what others are too polite to name.</li>
+          <li>People who've earned their authority and don't feel the need to announce it.</li>
+        </ul>
+      </div>
+
+      <hr class="manifest-divider">
+
+      <div class="manifest-block">
+        <span class="manifest-q">What I don't tolerate</span>
+        <p class="manifest-statement">THE USUAL<br>SUSPECTS.</p>
+        <ul class="manifest-list manifest-nope">
+          <li>Synergy. Leverage. Streamline. Elevate. Disrupt. (You know who you are.)</li>
+          <li>LinkedIn gurus with 10x growth secrets and zero case studies.</li>
+          <li>Branding consultants who've never built an actual brand.</li>
+          <li>Fake Stripe screenshots. Engagement pods. "Steal my 7-figure framework."</li>
+          <li>Calls when an email would do.</li>
+          <li>Credentials as identity. Ex-Google means you left Google.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- P.003 — FIND ME -->
+    <section class="section" id="links">
+      <span class="pg">P. 003 — Find me</span>
+      <div class="links-row">
+
+        <a href="https://www.linkedin.com/in/adrian-peticila/" target="_blank" rel="noopener" class="link-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn — 22K
+        </a>
+
+        <a href="https://x.com/adrianmpeticila" target="_blank" rel="noopener" class="link-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X / Twitter
+        </a>
+
+        <a href="https://aah.monster" target="_blank" rel="noopener" class="link-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="10.5" y="3" width="3" height="9" rx="1.5"/><circle cx="12" cy="18.5" r="2"/></svg>
+          aah.monster
+        </a>
+
+        <a href="https://www.producthunt.com/@adrian_m_peticila" target="_blank" rel="noopener" class="link-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405a1.8 1.8 0 000-3.6zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 14.4h-3.405v3.6H7.801V6h5.803a4.2 4.2 0 010 8.4z"/></svg>
+          Product Hunt
+        </a>
+
+        <a href="https://www.crunchbase.com/person/adrian-peticila" target="_blank" rel="noopener" class="link-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 0H2.4A2.41 2.41 0 000 2.4v19.2A2.41 2.41 0 002.4 24h19.2a2.41 2.41 0 002.4-2.4V2.4A2.41 2.41 0 0021.6 0zM8.306 15.976a3.69 3.69 0 01-1.318-1.25 3.43 3.43 0 01-.484-1.809 3.36 3.36 0 01.893-2.336A3.25 3.25 0 019.77 9.6a3.67 3.67 0 012.41.891V6.673h1.443v10.651h-1.386v-.848a3.49 3.49 0 01-1.157.87 3.38 3.38 0 01-1.39.294 3.37 3.37 0 01-1.384-.664zm5.254-3.028a2.27 2.27 0 00-.618-1.596 2.05 2.05 0 00-1.525-.646 2.13 2.13 0 00-1.568.638 2.22 2.22 0 00-.636 1.617 2.22 2.22 0 00.636 1.617 2.13 2.13 0 001.568.638 2.05 2.05 0 001.525-.645 2.27 2.27 0 00.618-1.623z"/></svg>
+          Crunchbase
+        </a>
+
+        <a href="mailto:adrian@peticila.ro" class="link-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+          adrian@peticila.ro
+        </a>
+
+      </div>
+    </section>
+
+    <!-- P.004 — RIGHT NOW -->
+    <section class="section" id="now">
+      <span class="pg">P. 004 — Right now</span>
+      <div class="now-grid">
+
+        <div class="now-item">
+          <span class="now-label">Listening</span>
+          <span class="now-val">Led Zeppelin IV</span>
+          <span class="now-sub">on repeat since 1971</span>
+        </div>
+
+        <div class="now-item">
+          <span class="now-label">Reading</span>
+          <span class="now-val">The Stranger</span>
+          <span class="now-sub">Camus — third time through</span>
+        </div>
+
+        <div class="now-item">
+          <span class="now-label">Building</span>
+          <span class="now-val">aah.monster</span>
+          <span class="now-sub">branding. one client at a time.</span>
+        </div>
+
+        <div class="now-item">
+          <span class="now-label">Thinking about</span>
+          <span class="now-val">Why most personal brands are obituaries written in advance.</span>
+          <span class="now-sub">&nbsp;</span>
+        </div>
+
+        <div class="now-item">
+          <span class="now-label">City</span>
+          <span class="now-val">Bucharest, RO</span>
+          <span class="now-sub">always, unfortunately and fortunately</span>
+        </div>
+
+        <div class="now-item">
+          <span class="now-label">Working</span>
+          <span class="now-val">CMO</span>
+          <span class="now-sub">B2B software &amp; AI services</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- P.005 — PRESS -->
+    <section class="section" id="press">
+      <span class="pg">P. 005 — Press</span>
+      <div class="press-list">
+
+        <a href="https://fractionalinsider.com/from-full-time-exec-to-fractional-leader-how-adrian-peticila-delivers-fast-measurable-results/" target="_blank" rel="noopener" class="press-item">
+          <span class="press-pub">Fractional Insider</span>
+          <span class="press-title">From Full-Time Exec to Fractional Leader: How Adrian Peticila Delivers Fast, Measurable Results</span>
+          <span class="press-arr">↗</span>
+        </a>
+
+        <a href="https://bizstack.tech/adrian-m-peticila/" target="_blank" rel="noopener" class="press-item">
+          <span class="press-pub">BizStack</span>
+          <span class="press-title">Adrian M. Peticila &mdash; CMO, Brand Strategist &amp; Founder of Aah, Monster!</span>
+          <span class="press-arr">↗</span>
+        </a>
+
+      </div>
+    </section>
+
+  </div>
+
+  <div class="wrap">
+    <footer>
+      <div class="footer-inner">
+        <span>Adrian M. Peticila &copy; 2026</span>
+        <span>Built raw. Shipped with intent.</span>
+        <span>
+          <a href="https://aah.monster">aah.monster</a>
+          &nbsp;&middot;&nbsp;
+          <a href="mailto:adrian@peticila.ro">adrian@peticila.ro</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('themeBtn');
+    const html = document.documentElement;
+    const key = 'peticila-theme';
+    const saved = localStorage.getItem(key);
+    if (saved) {
+      html.setAttribute('data-theme', saved);
+      btn.textContent = saved === 'dark' ? 'light' : 'dark';
+    }
+    btn.addEventListener('click', () => {
+      const cur = html.getAttribute('data-theme');
+      const next = cur === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem(key, next);
+      btn.textContent = next === 'dark' ? 'light' : 'dark';
+    });
+  </script>
+
+</body>
+</html>
