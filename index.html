@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -697,12 +697,15 @@
   </div>
 
   <script>
-    // Dark mode
+    // Theme
     const btn  = document.getElementById('themeBtn');
     const html = document.documentElement;
     const key  = 'peticila-theme';
     const saved = localStorage.getItem(key);
-    if (saved) { html.setAttribute('data-theme', saved); btn.textContent = saved === 'dark' ? 'light' : 'dark'; }
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initial = saved ? saved : (prefersDark ? 'dark' : 'light');
+    html.setAttribute('data-theme', initial);
+    btn.textContent = initial === 'dark' ? 'light' : 'dark';
     btn.addEventListener('click', () => {
       const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', next);
