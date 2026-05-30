@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Adrian M. Peticila</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://peticila.ro/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #060606;
+      --fg: #F0EBE0;
+      --mid: #888880;
+      --red: #D42020;
+      --faint: #3A3A38;
+    }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Bricolage Grotesque', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .wrap {
+      text-align: center;
+      max-width: 480px;
+    }
+    .code {
+      font-family: 'Unbounded', sans-serif;
+      font-size: clamp(5rem, 20vw, 9rem);
+      font-weight: 900;
+      color: var(--red);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    h1 {
+      font-family: 'Unbounded', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      font-weight: 900;
+      color: var(--fg);
+      margin-top: 1rem;
+      text-transform: lowercase;
+    }
+    p {
+      color: var(--mid);
+      font-size: 0.95rem;
+      margin-top: 0.75rem;
+      line-height: 1.6;
+    }
+    a.btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      background: var(--red);
+      color: var(--fg);
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: lowercase;
+      letter-spacing: 0.02em;
+    }
+    a.btn:hover { background: #b81c1c; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="code">404</div>
+    <h1>page not found.</h1>
+    <p>this url doesn't exist. the rest of the site does.</p>
+    <a href="/" class="btn">back to home</a>
+  </div>
+</body>
+</html>
