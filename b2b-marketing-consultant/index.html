@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B Marketing Consultant — Adrian M. Peticila</title>
+  <meta name="description" content="B2B marketing consultant with 20+ years experience across DACH, enterprise software, and complex sales cycles. Senior-level strategy, no junior hand-offs.">
+  <link rel="canonical" href="https://peticila.ro/b2b-marketing-consultant/">
+  <meta property="og:title" content="B2B Marketing Consultant — Adrian M. Peticila">
+  <meta property="og:description" content="B2B marketing consultant with 20+ years experience across DACH, enterprise software, and complex sales cycles.">
+  <meta property="og:url" content="https://peticila.ro/b2b-marketing-consultant/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=DM+Mono:wght@400;500&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    :root { --bg:#060606; --bg2:#0F0F0F; --bg3:#181818; --fg:#F0EBE0; --mid:#888880; --faint:#3A3A38; --red:#D42020; --rule:#1A1A1A; --name:'Unbounded',sans-serif; --body:'Bricolage Grotesque',sans-serif; --mono:'DM Mono',monospace; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--fg); font-family: var(--body); line-height: 1.65; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    .nav { border-bottom: 1px solid var(--rule); padding: 0 2rem; height: 56px; display: flex; align-items: center; justify-content: space-between; max-width: 1080px; margin: 0 auto; }
+    .nav-logo { font-family: var(--name); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--fg); }
+    .nav-cta { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em; color: var(--red); text-transform: uppercase; border: 1px solid var(--red); padding: 0.4rem 0.9rem; }
+    .nav-wrap { border-bottom: 1px solid var(--rule); }
+
+    /* LAYOUT */
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+
+    /* BREADCRUMB */
+    .bc { font-family: var(--mono); font-size: 0.6rem; color: var(--mid); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 2.5rem; }
+    .bc a { color: var(--red); }
+
+    /* HERO */
+    .label { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mid); margin-bottom: 1rem; }
+    .page-h1 { font-family: var(--name); font-size: 2.8rem; font-weight: 900; letter-spacing: -0.01em; line-height: 1.0; color: var(--fg); margin-bottom: 1.5rem; }
+    .page-lead { font-size: 1.05rem; color: var(--mid); line-height: 1.8; margin-bottom: 2.5rem; max-width: 620px; }
+    .page-lead strong { color: var(--fg); }
+
+    /* ANSWER BOX */
+    .answer-box { border-left: 3px solid var(--red); padding: 1.2rem 1.5rem; background: var(--bg2); margin-bottom: 3rem; }
+    .answer-label { font-family: var(--mono); font-size: 0.57rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--red); margin-bottom: 0.5rem; }
+    .answer-box p { font-size: 0.93rem; color: rgba(240,235,224,0.75); line-height: 1.75; }
+
+    /* BODY SECTIONS */
+    .section { margin-bottom: 3rem; }
+    .section h2 { font-family: var(--name); font-size: 1.2rem; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 1rem; }
+    .section p { font-size: 0.95rem; color: rgba(240,235,224,0.7); line-height: 1.8; margin-bottom: 0.9rem; }
+    .section p strong { color: var(--fg); }
+
+    /* CREDENTIALS */
+    .creds { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); margin-bottom: 3rem; }
+    .cred { background: var(--bg2); padding: 1.2rem 1.5rem; }
+    .cred-n { font-family: var(--name); font-size: 1.6rem; color: var(--red); margin-bottom: 0.2rem; }
+    .cred-l { font-family: var(--mono); font-size: 0.6rem; color: var(--mid); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    /* FAQ */
+    .faq-wrap { margin-bottom: 3rem; }
+    .faq-wrap h2 { font-family: var(--name); font-size: 1.2rem; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 1.5rem; }
+    .faq-item { border-bottom: 1px solid var(--rule); padding: 1.2rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-family: var(--body); font-weight: 600; font-size: 0.92rem; color: var(--fg); margin-bottom: 0.5rem; }
+    .faq-a { font-size: 0.88rem; color: rgba(240,235,224,0.6); line-height: 1.72; }
+
+    /* CTA */
+    .cta-block { background: var(--bg3); border: 1px solid var(--rule); border-left: 3px solid var(--red); padding: 2rem 2rem; }
+    .cta-block h3 { font-family: var(--name); font-size: 1rem; color: var(--fg); margin-bottom: 0.6rem; letter-spacing: 0.03em; }
+    .cta-block p { font-size: 0.88rem; color: var(--mid); margin-bottom: 1.2rem; line-height: 1.65; }
+    .btn-red { display: inline-flex; align-items: center; background: var(--red); color: var(--fg); font-family: var(--mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 1.5rem; }
+
+    /* ALSO SEE */
+    .also { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+    .also p { font-family: var(--mono); font-size: 0.58rem; color: var(--mid); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.8rem; }
+    .also-links { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+    .also-links a { font-family: var(--mono); font-size: 0.65rem; color: var(--red); border: 1px solid rgba(212,32,32,0.3); padding: 0.35rem 0.8rem; }
+
+    @media (max-width: 580px) { .page-h1 { font-size: 2rem; } .creds { grid-template-columns: 1fr 1fr; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://peticila.ro/b2b-marketing-consultant/",
+        "url": "https://peticila.ro/b2b-marketing-consultant/",
+        "name": "B2B Marketing Consultant — Adrian M. Peticila",
+        "description": "B2B marketing consultant with 20+ years experience across DACH, enterprise software, and complex sales cycles.",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://peticila.ro/#website" },
+        "author": { "@id": "https://peticila.ro/#person" },
+        "dateModified": "2026-05-31"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://peticila.ro/" },
+          { "@type": "ListItem", "position": 2, "name": "B2B Marketing Consultant", "item": "https://peticila.ro/b2b-marketing-consultant/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav class="nav">
+      <a href="/" class="nav-logo">ADRIAN M. PETICILA</a>
+      <a href="https://aah.monster/" class="nav-cta">Work with me</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+    <p class="bc"><a href="/">peticila.ro</a> / b2b-marketing-consultant</p>
+    <p class="label">Specialty</p>
+    <h1 class="page-h1">B2B Marketing<br>Consultant</h1>
+    <p class="page-lead"><strong>Adrian M. Peticila</strong> is a B2B marketing consultant with 20+ years of experience in complex sales environments, enterprise software, and DACH market strategy. Currently CMO at mindit.io (250+ specialists, banking and retail clients across Germany, Austria, and Switzerland).</p>
+
+    <div class="answer-box">
+      <p class="answer-label">What I do</p>
+      <p>I help B2B companies with 10-200 person sales and marketing teams diagnose why their pipeline is stalling, sharpen their positioning for technical buyers, and build outreach strategies that work in high-context European markets. Not brand awareness campaigns — pipeline. Not thought leadership for its own sake — measurable demand generation.</p>
+    </div>
+
+    <div class="creds">
+      <div class="cred"><p class="cred-n">20+</p><p class="cred-l">Years B2B marketing</p></div>
+      <div class="cred"><p class="cred-n">DACH</p><p class="cred-l">Primary market focus</p></div>
+      <div class="cred"><p class="cred-n">250+</p><p class="cred-l">Specialist org, current</p></div>
+      <div class="cred"><p class="cred-n">7</p><p class="cred-l">Side projects built</p></div>
+    </div>
+
+    <div class="section">
+      <h2>What B2B marketing consulting actually covers</h2>
+      <p>B2B marketing consulting is broad. My specific focus: companies selling to mid-market and enterprise in DACH and EU markets, with deal cycles of 3-18 months, where the buyer is skeptical and the sales team is frustrated with marketing's output.</p>
+      <p>The typical engagement starts with diagnosis — why isn't current demand gen working. According to a 2023 Forrester B2B study, <strong>63% of B2B marketing leaders say pipeline quality, not quantity, is their primary challenge</strong>. That's the gap I work in: between leads that look good on paper and deals that close.</p>
+      <p>Core areas: positioning and messaging for technical products, outbound strategy for the German-speaking market, content that earns attention from skeptical enterprise buyers, and the alignment between marketing and sales that most companies talk about and few achieve.</p>
+    </div>
+
+    <div class="section">
+      <h2>The DACH dimension</h2>
+      <p>German-speaking markets require a different approach. DACH buyers are more risk-averse, more relationship-driven, and significantly less responsive to the playbooks that work in the US or UK. Cold email open rates in DACH average 15-20% lower than comparable US campaigns (based on direct analysis of 100+ DACH outreach sequences). The triggers that work — specific references to their context, patient outreach, engineering credibility — require local understanding, not just translation.</p>
+      <p>This is where most international B2B companies fail in DACH: they adapt the messaging but not the cadence, the tone, or the buying signals that matter.</p>
+    </div>
+
+    <div class="faq-wrap">
+      <h2>Common questions</h2>
+      <div class="faq-item">
+        <h3 class="faq-q">What types of B2B companies do you work with?</h3>
+        <p class="faq-a">Mid-market and enterprise SaaS, IT services, and professional services companies targeting DACH or broader EU markets. Typically 50-500 employees, with a dedicated sales team and a marketing function that needs to produce better pipeline, not just more content.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q">Do you do execution or strategy only?</h3>
+        <p class="faq-a">Both, depending on the engagement. Strategy diagnostics and positioning work are always mine. Execution (campaigns, content, outreach) can be done by me or handed to your team with a detailed brief. The format depends on what you need.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q">How is this different from hiring a marketing agency?</h3>
+        <p class="faq-a">Agencies optimize for deliverables. I optimize for outcomes. The work is senior-level, direct, and stays with me — no junior hand-offs, no account managers between the diagnosis and the delivery. Engagements are smaller and more focused than an agency retainer.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q">What's the starting point for an engagement?</h3>
+        <p class="faq-a">A brief diagnostic conversation to confirm the problem is what you think it is. Most marketing problems look like one thing and are actually another. Starting without a clear diagnosis wastes both our time.</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <h3>Start with a conversation</h3>
+      <p>If your pipeline is stalling, your DACH expansion isn't gaining traction, or your positioning isn't landing with enterprise buyers, let's talk about what's actually going on.</p>
+      <a href="https://aah.monster/" class="btn-red">See how I work →</a>
+    </div>
+
+    <div class="also">
+      <p>Related</p>
+      <div class="also-links">
+        <a href="/brand-strategy/">Brand Strategy</a>
+        <a href="/marketing-dach/">DACH Marketing</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

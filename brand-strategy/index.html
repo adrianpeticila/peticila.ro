@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Strategy — Adrian M. Peticila</title>
+  <meta name="description" content="Brand strategy for B2B companies and founders who need more than a logo refresh. Positioning, messaging architecture, and the story that earns attention.">
+  <link rel="canonical" href="https://peticila.ro/brand-strategy/">
+  <meta property="og:title" content="Brand Strategy — Adrian M. Peticila">
+  <meta property="og:description" content="Brand strategy for B2B companies and founders who need more than a logo refresh. Positioning, messaging architecture, and the story that earns attention.">
+  <meta property="og:url" content="https://peticila.ro/brand-strategy/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=DM+Mono:wght@400;500&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    :root { --bg:#060606; --bg2:#0F0F0F; --bg3:#181818; --fg:#F0EBE0; --mid:#888880; --faint:#3A3A38; --red:#D42020; --rule:#1A1A1A; --name:'Unbounded',sans-serif; --body:'Bricolage Grotesque',sans-serif; --mono:'DM Mono',monospace; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--fg); font-family: var(--body); line-height: 1.65; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    .nav-wrap { border-bottom: 1px solid var(--rule); }
+    .nav { border-bottom: none; padding: 0 2rem; height: 56px; display: flex; align-items: center; justify-content: space-between; max-width: 1080px; margin: 0 auto; }
+    .nav-logo { font-family: var(--name); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--fg); }
+    .nav-cta { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em; color: var(--red); text-transform: uppercase; border: 1px solid var(--red); padding: 0.4rem 0.9rem; }
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .bc { font-family: var(--mono); font-size: 0.6rem; color: var(--mid); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 2.5rem; }
+    .bc a { color: var(--red); }
+    .label { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mid); margin-bottom: 1rem; }
+    .page-h1 { font-family: var(--name); font-size: 2.8rem; font-weight: 900; letter-spacing: -0.01em; line-height: 1.0; color: var(--fg); margin-bottom: 1.5rem; }
+    .page-lead { font-size: 1.05rem; color: var(--mid); line-height: 1.8; margin-bottom: 2.5rem; max-width: 620px; }
+    .page-lead strong { color: var(--fg); }
+    .answer-box { border-left: 3px solid var(--red); padding: 1.2rem 1.5rem; background: var(--bg2); margin-bottom: 3rem; }
+    .answer-label { font-family: var(--mono); font-size: 0.57rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--red); margin-bottom: 0.5rem; }
+    .answer-box p { font-size: 0.93rem; color: rgba(240,235,224,0.75); line-height: 1.75; }
+    .section { margin-bottom: 3rem; }
+    .section h2 { font-family: var(--name); font-size: 1.2rem; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 1rem; }
+    .section p { font-size: 0.95rem; color: rgba(240,235,224,0.7); line-height: 1.8; margin-bottom: 0.9rem; }
+    .section p strong { color: var(--fg); }
+    .faq-wrap { margin-bottom: 3rem; }
+    .faq-wrap h2 { font-family: var(--name); font-size: 1.2rem; letter-spacing: 0.02em; color: var(--fg); margin-bottom: 1.5rem; }
+    .faq-item { border-bottom: 1px solid var(--rule); padding: 1.2rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-family: var(--body); font-weight: 600; font-size: 0.92rem; color: var(--fg); margin-bottom: 0.5rem; }
+    .faq-a { font-size: 0.88rem; color: rgba(240,235,224,0.6); line-height: 1.72; }
+    .cta-block { background: var(--bg3); border: 1px solid var(--rule); border-left: 3px solid var(--red); padding: 2rem 2rem; }
+    .cta-block h3 { font-family: var(--name); font-size: 1rem; color: var(--fg); margin-bottom: 0.6rem; letter-spacing: 0.03em; }
+    .cta-block p { font-size: 0.88rem; color: var(--mid); margin-bottom: 1.2rem; line-height: 1.65; }
+    .btn-red { display: inline-flex; align-items: center; background: var(--red); color: var(--fg); font-family: var(--mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 1.5rem; }
+    .also { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+    .also p { font-family: var(--mono); font-size: 0.58rem; color: var(--mid); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.8rem; }
+    .also-links { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+    .also-links a { font-family: var(--mono); font-size: 0.65rem; color: var(--red); border: 1px solid rgba(212,32,32,0.3); padding: 0.35rem 0.8rem; }
+    @media (max-width: 580px) { .page-h1 { font-size: 2rem; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://peticila.ro/brand-strategy/",
+        "url": "https://peticila.ro/brand-strategy/",
+        "name": "Brand Strategy — Adrian M. Peticila",
+        "description": "Brand strategy for B2B companies and founders who need more than a logo refresh. Positioning, messaging architecture, and the story that earns attention.",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://peticila.ro/#website" },
+        "author": { "@id": "https://peticila.ro/#person" },
+        "dateModified": "2026-05-31"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://peticila.ro/" },
+          { "@type": "ListItem", "position": 2, "name": "Brand Strategy", "item": "https://peticila.ro/brand-strategy/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav class="nav">
+      <a href="/" class="nav-logo">ADRIAN M. PETICILA</a>
+      <a href="https://aah.monster/" class="nav-cta">Work with me</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+    <p class="bc"><a href="/">peticila.ro</a> / brand-strategy</p>
+    <p class="label">Specialty</p>
+    <h1 class="page-h1">Brand<br>Strategy</h1>
+    <p class="page-lead">Most brand strategy projects produce a deck. A good brand strategy produces a company that knows what it stands for, who it's for, and what to say when it matters. <strong>Those are different outcomes.</strong></p>
+
+    <div class="answer-box">
+      <p class="answer-label">What brand strategy actually is</p>
+      <p>Brand strategy is the set of decisions that makes every other marketing decision easier. What you say, who you say it to, why anyone should care, and how you're different from the obvious alternatives. Done right, it turns "we need more content" into "we need to be the only logical choice for this specific buyer." That's the gap I work in.</p>
+    </div>
+
+    <div class="section">
+      <h2>Why most B2B brand strategy fails</h2>
+      <p>The common failure pattern: a company hires a branding agency, gets a beautiful visual identity and a brand book, and finds that 6 months later the sales team is still using their own words and marketing is producing content nobody reads.</p>
+      <p><strong>The problem is that brand strategy and visual identity are confused.</strong> A new logo doesn't change what you stand for. Messaging pillars in a PDF don't change how a sales rep talks to a prospect. According to a 2024 LinkedIn B2B Institute study, companies with clear, consistent brand positioning show 23% higher win rates in competitive deals — but consistency requires the strategy to be internalized, not filed.</p>
+      <p>My approach: brand strategy is a working document, not a deliverable. It informs hiring, sales enablement, content, and every outbound touchpoint. If it doesn't change how the team talks about what they do, it hasn't worked.</p>
+    </div>
+
+    <div class="section">
+      <h2>What the work looks like</h2>
+      <p>Typically: competitive landscape analysis, buyer research (not surveys — conversations), positioning hypothesis, messaging architecture, and a validation pass against real-world sales situations. The output is a positioning and messaging framework that the sales team can use without reading a 40-page document.</p>
+      <p>For founders building personal brands alongside their company: the work overlaps with what Aah, Monster! does — how the founder's voice and the company's positioning reinforce each other without becoming the same thing.</p>
+    </div>
+
+    <div class="faq-wrap">
+      <h2>Questions</h2>
+      <div class="faq-item">
+        <h3 class="faq-q">Is brand strategy different from marketing strategy?</h3>
+        <p class="faq-a">Yes. Brand strategy defines what you are and why it matters. Marketing strategy defines how you reach the right people and convert them. Brand strategy is upstream — the positioning that makes marketing decisions easier. You can have good marketing strategy with weak brand strategy, but you'll fight for every win. Strong brand strategy makes the marketing decisions obvious.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q">How long does a brand strategy engagement take?</h3>
+        <p class="faq-a">4-8 weeks for a full positioning and messaging framework. Faster if the competitive landscape is clear and the buyer is well-understood. Longer if there's significant ambiguity about what the company actually is versus what it wants to be.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q">Do you work with early-stage companies or only established ones?</h3>
+        <p class="faq-a">Both, but the work is different. Early-stage: find the position that's defensible and specific enough to matter. Established: usually about sharpening or repositioning — the company has drifted, merged, expanded, or simply stopped being interesting to the buyers who matter most.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q">What's the connection to personal branding?</h3>
+        <p class="faq-a">For founders and C-suite, personal brand and company brand are related but distinct assets. Aah, Monster! handles the personal brand work. peticila.ro is the professional hub. The strategy work sits at the intersection — how does the founder's credibility reinforce the company's positioning without creating dependency on one person?</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <h3>Brand work that actually changes behavior</h3>
+      <p>If your brand strategy is a PDF nobody opens, let's build one that the team actually uses to make decisions.</p>
+      <a href="https://aah.monster/" class="btn-red">See how I work →</a>
+    </div>
+
+    <div class="also">
+      <p>Related</p>
+      <div class="also-links">
+        <a href="/b2b-marketing-consultant/">B2B Marketing Consulting</a>
+        <a href="/marketing-dach/">DACH Marketing</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
