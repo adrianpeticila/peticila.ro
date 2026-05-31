@@ -511,14 +511,16 @@
         <div>
           <span class="hero-tag">CMO &mdash; Brand Strategist &mdash; Bucharest</span>
           <p style="font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:1rem;"><a rel="author" href="https://peticila.ro/" style="color:var(--faint);text-decoration:none;">Adrian M. Peticila</a> &middot; <time datetime="2026-05-31">Updated May 2026</time></p>
+          <p id="dyn-intro" style="display:none;font-family:var(--mono);font-size:0.67rem;letter-spacing:0.08em;color:var(--red);text-transform:uppercase;margin-bottom:0.9rem;"></p>
           <p class="hero-bio">
-            <strong>15+ years in marketing, PR, brand building and communications.</strong>
-            Financial services, fintech, software. Currently CMO.
-            Founder of <strong>Aah, Monster!</strong> &mdash; where I apply
-            corporate-grade brand architecture to C-suite executives and founders
-            who are done being invisible.
-            I've built brands from zero and rebuilt ones that were broken.
-            If yours needs work, I'm not hard to reach.
+            You're here for one of three reasons: someone passed my name along,
+            you found something I wrote, or you're doing due diligence before a conversation.
+            All three are fine.
+            20+ years in marketing. 3 CMO tracks. Financial services, fintech, software, DACH B2B.
+            Currently CMO at mindit.io — 250 specialists, banking and retail clients across Germany, Austria, Switzerland.
+            I find where a brand is lying to itself. Say it plainly. Fix it.
+            Founder of <strong>Aah, Monster!</strong> — where I apply the same thinking to the person running the company.
+            If there's a fit, you'll know after three minutes on this page.
           </p>
         </div>
         <div class="hero-stats">
@@ -558,15 +560,16 @@
         <span class="manifest-q">The short version</span>
         <p class="manifest-statement">Hardboiled.<br>Allergic to BS.</p>
         <p class="manifest-body">
-          Marketer by trade. Brand architect by instinct. 20+ years across marketing,
-          PR, communications and brand building — financial services, fintech, software, DACH B2B.
-          Currently CMO at mindit.io (250+ specialists, banking and retail clients across Germany, Austria, Switzerland).
-          I've built marketing functions from zero, led teams across markets,
-          and run brands that actually meant something.
+          If you got here from a recommendation, a post, or a search — you want to know if the substance matches the signal.
+          It does. Here's the short version.<br><br>
+          20+ years in marketing, PR, communications and brand building.
+          Financial services, fintech, software, DACH B2B.
+          Currently CMO at mindit.io — 250 specialists, banking and retail clients across Germany, Austria, Switzerland.
+          I've built marketing functions from nothing and rebuilt ones that were bleeding deals in silence.
           Cynical enough to tell you when your positioning is garbage.
           Experienced enough to fix it.
-          Not a coach. Not a guru. A CMO with a track record
-          and zero patience for empty credentials.
+          Not a coach. Not a framework seller. A working CMO with a track record
+          and zero patience for credentials that don't do anything.
         </p>
         <p class="manifest-body" style="margin-top:1.2rem;font-size:0.88rem;opacity:0.65;border-left:2px solid var(--red);padding-left:1rem;">
           According to Forrester's 2023 B2B Marketing Report, 63% of enterprise deals stall due to unclear positioning — not product quality. That's the gap I work in.
@@ -617,15 +620,15 @@
       <div class="for-grid">
         <div class="for-item">
           <div class="for-title">The invisible executive</div>
-          <div class="for-desc">You run a company or lead a team, but outside your office nobody knows your name. You have authority. You don't have a brand. That's a problem.</div>
+          <div class="for-desc">You run a team. Possibly a company. Outside your office, your name carries nothing. Deals happen at tables where they've heard of you. Right now, they haven't.</div>
         </div>
         <div class="for-item">
           <div class="for-title">The mis-positioned founder</div>
-          <div class="for-desc">Your LinkedIn says one thing, your website says another, your pitch says a third. You're not confusing — you're confused. I fix that.</div>
+          <div class="for-desc">Your LinkedIn says something generic. Your website says something different. Your pitch says a third thing. That's not three messages — it's zero. I fix that.</div>
         </div>
         <div class="for-item">
-          <div class="for-title">The credible professional going public</div>
-          <div class="for-desc">You know your field cold. Now you need people outside your field to know it too. Expertise doesn't market itself. I help it do that.</div>
+          <div class="for-title">The expert going public</div>
+          <div class="for-desc">You know your field cold. People in the room know it. People outside the room don't. Expertise doesn't travel on its own. I make it travel.</div>
         </div>
       </div>
 
@@ -779,6 +782,20 @@
   </div>
 
   <script>
+    // Dynamic intro — visitor-aware
+    (function() {
+      const el = document.getElementById('dyn-intro');
+      if (!el) return;
+      const ref = document.referrer || '';
+      const returning = localStorage.getItem('pet-visited');
+      localStorage.setItem('pet-visited', '1');
+      let msg = '';
+      if (ref.includes('linkedin.com'))           msg = 'LinkedIn sent you. Make the next three minutes count.';
+      else if (/google\.[a-z]{2,3}/.test(ref))    msg = 'You searched. Here\'s whether I\'m the answer.';
+      else if (returning === '1')                  msg = 'You were here before. Something didn\'t let you move on.';
+      if (msg) { el.textContent = msg; el.style.display = 'block'; }
+    })();
+
     // Theme
     const btn  = document.getElementById('themeBtn');
     const html = document.documentElement;
