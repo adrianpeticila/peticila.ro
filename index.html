@@ -141,6 +141,7 @@
       transition: background .3s, color .3s;
     }
     a { color: inherit; text-decoration: none; }
+    .manifest-body a, .section p a { text-decoration: underline; text-underline-offset: 3px; }
 
     /* ── NAV ──────────────────────────────────────── */
     nav {
@@ -198,7 +199,7 @@
       font-weight: 500;
       letter-spacing: .18em;
       text-transform: uppercase;
-      color: var(--faint);
+      color: var(--mid);
       margin-bottom: 3rem;
       display: block;
     }
@@ -282,7 +283,7 @@
       font-weight: 500;
       letter-spacing: .12em;
       text-transform: uppercase;
-      color: var(--faint);
+      color: var(--mid);
       margin-top: .4rem;
       display: block;
     }
@@ -293,7 +294,7 @@
       font-size: .62rem;
       letter-spacing: .14em;
       text-transform: uppercase;
-      color: var(--faint);
+      color: var(--mid);
     }
 
     /* ── SECTION SHARED ───────────────────────────── */
@@ -315,7 +316,7 @@
       font-weight: 500;
       letter-spacing: .14em;
       text-transform: uppercase;
-      color: var(--faint);
+      color: var(--mid);
       white-space: nowrap;
     }
     .section-rule { flex: 1; height: 1px; background: var(--rule); }
@@ -416,7 +417,7 @@
       font-weight: 500;
       letter-spacing: .14em;
       text-transform: uppercase;
-      color: var(--faint);
+      color: var(--mid);
       margin-bottom: .75rem;
       display: block;
     }
@@ -501,10 +502,10 @@
       font-weight: 500;
       letter-spacing: .12em;
       text-transform: uppercase;
-      color: var(--faint);
+      color: var(--mid);
     }
     .press-title { font-size: .875rem; font-weight: 500; color: var(--fg); line-height: 1.4; }
-    .press-arr { color: var(--faint); font-size: .8rem; justify-self: end; }
+    .press-arr { color: var(--mid); font-size: .8rem; justify-self: end; }
 
     /* ── FOOTER ───────────────────────────────────── */
     footer { padding: 2.5rem 0; border-top: 1px solid var(--rule); }
@@ -516,9 +517,9 @@
       font-size: .6rem;
       letter-spacing: .1em;
       text-transform: uppercase;
-      color: var(--faint);
+      color: var(--mid);
     }
-    .footer-inner a { color: var(--faint); transition: color .15s; }
+    .footer-inner a { color: var(--mid); transition: color .15s; }
     .footer-inner a:hover { color: var(--red); }
 
     /* ── MOBILE ───────────────────────────────────── */
@@ -553,6 +554,7 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <!-- HERO -->
   <section id="hero">
     <div class="wrap">
@@ -606,7 +608,7 @@
     <span id="about" aria-hidden="true" style="display:block;position:relative;top:-80px;visibility:hidden;"></span>
     <section class="section" id="who">
       <div class="section-head">
-        <span class="section-tag">Who I am</span>
+        <h2 class="section-tag">Who I am</h2>
         <div class="section-rule"></div>
       </div>
       <span class="pg">P. 002 — Who I am</span>
@@ -664,7 +666,7 @@
     <!-- WHO THIS IS FOR -->
     <section class="section" id="for">
       <div class="section-head">
-        <span class="section-tag">Who this is for</span>
+        <h2 class="section-tag">Who this is for</h2>
         <div class="section-rule"></div>
       </div>
       <span class="pg">P. 003 — Who this is for</span>
@@ -693,7 +695,7 @@
     <!-- FIND ME -->
     <section class="section" id="links">
       <div class="section-head">
-        <span class="section-tag">Find me</span>
+        <h2 class="section-tag">Find me</h2>
         <div class="section-rule"></div>
       </div>
       <span class="pg">P. 004 — Find me</span>
@@ -728,7 +730,7 @@
     <!-- RIGHT NOW -->
     <section class="section" id="now">
       <div class="section-head">
-        <span class="section-tag">Right now</span>
+        <h2 class="section-tag">Right now</h2>
         <div class="section-rule"></div>
       </div>
       <span class="pg">P. 005 — Right now</span>
@@ -769,7 +771,7 @@
     <!-- PRESS -->
     <section class="section" id="press">
       <div class="section-head">
-        <span class="section-tag">Press</span>
+        <h2 class="section-tag">Press</h2>
         <div class="section-rule"></div>
       </div>
       <span class="pg">P. 006 — Press</span>
@@ -793,7 +795,7 @@
     <!-- FAQ -->
     <section class="section" id="faq" style="border-top:1px solid var(--rule);">
       <div class="section-head">
-        <span class="section-tag">FAQ</span>
+        <h2 class="section-tag">FAQ</h2>
         <div class="section-rule"></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:0;">
@@ -820,6 +822,7 @@
       </div>
     </section>
 
+  </main>
     <footer>
       <div class="footer-inner">
         <span>Published by <a rel="author" href="#about" style="color:inherit;text-decoration:underline;">Adrian M. Peticila</a> &copy; 2026</span>
