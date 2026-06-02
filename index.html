@@ -223,6 +223,8 @@
       white-space: nowrap;
       display: block;
       line-height: .88;
+      font-size: clamp(2rem, 14vw, 220px); /* close estimate — FitText fine-tunes */
+      contain: layout;
     }
     .name-first { color: var(--red); }
     .name-last  { color: var(--fg); }
