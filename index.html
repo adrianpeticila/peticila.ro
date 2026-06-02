@@ -521,6 +521,21 @@
     }
     .footer-inner a { color: var(--mid); transition: color .15s; }
     .footer-inner a:hover { color: var(--red); }
+    .footer-pages {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 1.5rem;
+    }
+    .footer-pages a { color: var(--mid); transition: color .15s; }
+    .footer-pages a:hover { color: var(--red); }
 
     /* ── MOBILE ───────────────────────────────────── */
     @media (max-width: 640px) {
@@ -824,6 +839,12 @@
 
   </main>
     <footer>
+      <div class="footer-pages">
+        <span>Pages</span>
+        <a href="/b2b-marketing-consultant/">B2B Marketing Consultant</a>
+        <a href="/brand-strategy/">Brand Strategy</a>
+        <a href="/marketing-dach/">DACH Marketing</a>
+      </div>
       <div class="footer-inner">
         <span>Published by <a rel="author" href="#about" style="color:inherit;text-decoration:underline;">Adrian M. Peticila</a> &copy; 2026</span>
         <span><time datetime="2026-06-02">Updated June 2026</time></span>
