@@ -1,0 +1,42 @@
+  @font-face {
+    font-family: 'Bricolage Grotesque'
+    font-style: normal
+    font-weight: 400
+    font-display: swap
+    src: url('/fonts/BricolageGrotesque-400-normal.woff2') format('woff2')
+  }
+  @font-face {
+    font-family: 'Bricolage Grotesque'
+    font-style: normal
+    font-weight: 500
+    font-display: swap
+    src: url('/fonts/BricolageGrotesque-500-normal.woff2') format('woff2')
+  }
+  @font-face {
+    font-family: 'Bricolage Grotesque'
+    font-style: normal
+    font-weight: 600
+    font-display: swap
+    src: url('/fonts/BricolageGrotesque-600-normal.woff2') format('woff2')
+  }
+  @font-face {
+    font-family: 'DM Mono'
+    font-style: normal
+    font-weight: 400
+    font-display: swap
+    src: url('/fonts/DMMono-400-normal.woff2') format('woff2')
+  }
+  @font-face {
+    font-family: 'DM Mono'
+    font-style: normal
+    font-weight: 500
+    font-display: swap
+    src: url('/fonts/DMMono-500-normal.woff2') format('woff2')
+  }
+  @font-face {
+    font-family: 'Unbounded'
+    font-style: normal
+    font-weight: 900
+    font-display: swap
+    src: url('/fonts/Unbounded-900-normal.woff2') format('woff2')
+  }
