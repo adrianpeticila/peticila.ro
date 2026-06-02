@@ -1,0 +1,17 @@
+{
+  "name": "Adrian M. Peticila",
+  "short_name": "Peticila",
+  "description": "CMO. Brand strategist. Founder of Aah, Monster!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060606",
+  "theme_color": "#D42020",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}

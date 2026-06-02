@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "name": "Adrian M. Peticila",
+  "description": "Personal site of Adrian M. Peticila — CMO, brand strategist, founder of Aah, Monster! 20+ years in B2B marketing.",
+  "url": "https://peticila.ro/",
+  "contact": "adrian@peticila.ro",
+  "capabilities": [
+    {
+      "name": "professional_profile",
+      "description": "Detailed professional background, specializations, and current projects",
+      "endpoint": "https://peticila.ro/llms.txt"
+    }
+  ],
+  "content_index": "https://peticila.ro/llms.txt",
+  "sitemap": "https://peticila.ro/sitemap.xml"
+}

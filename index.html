@@ -16,6 +16,15 @@
   <meta name="twitter:site" content="@adrianmpeticila">
   <meta name="twitter:title" content="Adrian M. Peticila — CMO, Brand Strategist">
   <meta name="twitter:description" content="CMO. Brand strategist. Founder of Aah, Monster! 15+ years making brands mean something.">
+  <meta property="og:image" content="https://peticila.ro/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://peticila.ro/og-image.png">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#060606">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F4EF">
+  <link rel="manifest" href="/manifest.json">
   <meta name="author" content="Adrian M. Peticila">
   <meta name="date" content="2026-06-02">
   <script type="application/ld+json">
@@ -86,7 +95,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=DM+Mono:wght@400;500&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <style>
 
     :root {
@@ -114,6 +125,8 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { font-size: 16px; scroll-behavior: smooth; }
+    .skip-link { position: absolute; top: -100%; left: 1rem; background: var(--red); color: #fff; padding: 0.5rem 1rem; font-size: 0.875rem; font-family: monospace; border-radius: 0 0 4px 4px; z-index: 9999; text-decoration: none; }
+    .skip-link:focus { top: 0; }
     body {
       font-family: var(--body);
       background: var(--bg);
@@ -520,6 +533,7 @@
   </style>
 </head>
 <body>
+  <a href="#hero" class="skip-link">Skip to main content</a>
 
   <nav>
     <span class="nav-id">peticila.ro</span>
