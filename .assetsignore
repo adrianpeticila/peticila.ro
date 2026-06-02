@@ -1,0 +1,7 @@
+.git
+.wrangler
+.wranglerignore
+.assetsignore
+*.md
+og-image-source.html
+llms-full.txt
