@@ -59,6 +59,19 @@
         "dateModified": "2026-06-02"
       },
       {
+        "@type": "Organization",
+        "@id": "https://peticila.ro/#organization",
+        "name": "Adrian M. Peticila",
+        "url": "https://peticila.ro/",
+        "description": "Personal brand and consulting practice of Adrian M. Peticila — CMO, brand strategist, founder of Aah, Monster!",
+        "founder": { "@id": "https://peticila.ro/#person" },
+        "sameAs": [
+          "https://www.linkedin.com/in/adrian-peticila/",
+          "https://aah.monster/",
+          "https://x.com/adrianmpeticila"
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://peticila.ro/" }
@@ -510,6 +523,7 @@
     <div class="nav-r">
       <a href="#who" class="nav-a">Who I am</a>
       <a href="#for" class="nav-a">Who this is for</a>
+      <a href="#about" class="nav-a">About</a>
       <a href="https://aah.monster" target="_blank" rel="noopener" class="nav-a">aah.monster ↗</a>
       <button class="nav-theme" id="themeBtn">light</button>
     </div>
@@ -565,6 +579,7 @@
   <div class="wrap">
 
     <!-- WHO I AM -->
+    <span id="about" aria-hidden="true" style="display:block;position:relative;top:-80px;visibility:hidden;"></span>
     <section class="section" id="who">
       <div class="section-head">
         <span class="section-tag">Who I am</span>
@@ -786,8 +801,8 @@
 
     <footer>
       <div class="footer-inner">
-        <span>Adrian M. Peticila &copy; 2026</span>
-        <span><time datetime="2026-05-31">Updated May 2026</time></span>
+        <span>by <a rel="author" href="#about" style="color:inherit;text-decoration:underline;">Adrian M. Peticila</a> &copy; 2026</span>
+        <span><time datetime="2026-06-02">Updated June 2026</time></span>
         <span>
           <a href="https://aah.monster">aah.monster</a>
           &nbsp;&middot;&nbsp;
