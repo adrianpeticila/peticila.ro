@@ -1,4 +1,2 @@
 # Cloudflare Pages redirects
-# www → apex (Cloudflare Pages handles this automatically via custom domain,
-# but explicit rule is a safety net)
-https://www.peticila.ro/* https://peticila.ro/:splat 301
+# www → apex is handled automatically by Cloudflare custom domain settings
