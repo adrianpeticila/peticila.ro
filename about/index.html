@@ -82,14 +82,12 @@
     .wrap { max-width: 760px; margin: 0 auto; padding: 0 2.5rem; }
 
     .hero { padding: 5rem 0 3rem; border-bottom: 1px solid var(--rule); }
-    .hero-inner { display: flex; gap: 3rem; align-items: flex-start; }
-    .hero-photo { flex-shrink: 0; width: 160px; height: 160px; overflow: hidden; }
-    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
-    .hero-text { flex: 1; }
+    .hero-photo { width: 100%; height: 420px; overflow: hidden; margin-bottom: 2.5rem; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block; }
     .pg { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--faint); display: block; margin-bottom: 2rem; }
     h1 { font-family: var(--name); font-size: clamp(2.5rem, 7vw, 4.5rem); font-weight: 900; text-transform: lowercase; line-height: 1; color: var(--red); margin-bottom: 1rem; }
     .hero-sub { font-size: 1rem; color: var(--mid); line-height: 1.7; max-width: 560px; }
-    @media (max-width: 600px) { .hero-inner { flex-direction: column; gap: 1.5rem; } .hero-photo { width: 120px; height: 120px; } }
+    @media (max-width: 600px) { .hero-photo { height: 280px; } }
 
     .section { padding: 3.5rem 0; border-bottom: 1px solid var(--rule); }
     .section-tag { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint); display: block; margin-bottom: 1.5rem; }
@@ -135,15 +133,11 @@
 
     <section class="hero">
       <span class="pg">P. 000 · About</span>
-      <div class="hero-inner">
-        <div class="hero-photo">
-          <img src="/img/ap_profile_pic.png" alt="Adrian M. Peticila">
-        </div>
-        <div class="hero-text">
-          <h1>adrian m.<br>peticila</h1>
-          <p class="hero-sub">CMO. Brand strategist. 20+ years making brands mean something. Founder of <a href="https://aah.monster" style="color:var(--fg);text-decoration:underline;">Aah, Monster!</a>, personal branding for C-suite and founders. Based in Bucharest.</p>
-        </div>
+      <div class="hero-photo">
+        <img src="/img/ap_profile_pic.png" alt="Adrian M. Peticila">
       </div>
+      <h1>adrian m.<br>peticila</h1>
+      <p class="hero-sub">CMO. Brand strategist. 20+ years making brands mean something. Founder of <a href="https://aah.monster" style="color:var(--fg);text-decoration:underline;">Aah, Monster!</a>, personal branding for C-suite and founders. Based in Bucharest.</p>
     </section>
 
     <section class="section">
