@@ -264,8 +264,7 @@
     const html = document.documentElement;
     const key = 'peticila-theme';
     const saved = localStorage.getItem(key);
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initial = saved ? saved : (prefersDark ? 'dark' : 'light');
+    const initial = saved ? saved : 'light';
     html.setAttribute('data-theme', initial);
     btn.textContent = initial === 'dark' ? 'light' : 'dark';
     btn.addEventListener('click', () => {

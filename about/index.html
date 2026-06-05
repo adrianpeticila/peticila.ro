@@ -207,13 +207,17 @@
 
 <script>
   const btn = document.getElementById('themeBtn');
-  const saved = localStorage.getItem('pet-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-  if (saved === 'light') { document.documentElement.setAttribute('data-theme','light'); btn.textContent = '◑ dark'; }
+  const html = document.documentElement;
+  const key = 'peticila-theme';
+  const saved = localStorage.getItem(key);
+  const initial = saved ? saved : 'light';
+  html.setAttribute('data-theme', initial);
+  btn.textContent = initial === 'dark' ? '◑ light' : '◑ dark';
   btn.addEventListener('click', () => {
-    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-    document.documentElement.setAttribute('data-theme', isLight ? 'dark' : 'light');
-    btn.textContent = isLight ? '◑ light' : '◑ dark';
-    localStorage.setItem('pet-theme', isLight ? 'dark' : 'light');
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem(key, next);
+    btn.textContent = next === 'dark' ? '◑ light' : '◑ dark';
   });
 </script>
 </body>
