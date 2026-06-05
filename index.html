@@ -275,7 +275,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
-      align-items: center;
+      align-items: stretch;
+    }
+    .hero-bottom > div:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .hero-tag {
       font-family: var(--mono);
