@@ -78,7 +78,7 @@
         "isPartOf": { "@id": "https://peticila.ro/#website" },
         "author": { "@id": "https://peticila.ro/#person" },
         "mainEntity": { "@id": "https://peticila.ro/#person" },
-        "dateModified": "2026-06-03"
+        "dateModified": "2026-06-03T00:00:00+03:00"
       },
       {
         "@type": "Organization",
@@ -650,6 +650,9 @@
       .press-item { grid-template-columns: 1fr 1.5rem; }
       .press-pub { display: none; }
     }
+    /* Kit form dark mode override */
+    [data-theme="dark"] .formkit-submit { background: var(--red) !important; color: #F0EBE0 !important; }
+    [data-theme="dark"] .formkit-input { background: var(--bg2) !important; color: var(--fg) !important; border-color: var(--faint) !important; }
   </style>
 </head>
 <body>
@@ -660,6 +663,7 @@
     <div class="nav-r">
       <a href="#who" class="nav-a">Who I am</a>
       <a href="#for" class="nav-a">Who this is for</a>
+      <a href="/uncliche/" class="nav-a">Uncliché</a>
       <a href="/manifesto/" class="nav-a">Manifesto</a>
       <a href="/about/" class="nav-a">About</a>
       <a href="/work/" class="nav-a">Work</a>
@@ -1039,6 +1043,21 @@
     </div>
   </section>
 
+  <section id="subscribe" style="border-top:1px solid var(--rule);padding:3rem 0;">
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:3rem;flex-wrap:wrap;">
+        <div style="flex:1;min-width:240px;max-width:420px;">
+          <p style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:0.75rem;">email list</p>
+          <h2 style="font-family:var(--name);font-size:clamp(1.2rem,3vw,1.8rem);font-weight:900;letter-spacing:-.02em;color:var(--fg);margin-bottom:0.5rem;line-height:1.1;">Get the Uncliché framework</h2>
+          <p style="font-size:.85rem;color:var(--mid);line-height:1.6;">I break it down further in the email list — one piece at a time, no noise.</p>
+        </div>
+        <div style="flex:1;min-width:280px;max-width:480px;">
+          <script async data-uid="181bc354c6" src="https://adrian-m-peticila.kit.com/181bc354c6/index.js"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
     <footer>
       <div class="wrap">
@@ -1047,6 +1066,7 @@
           <a href="/about/">About</a>
           <a href="/manifesto/">Manifesto</a>
           <a href="/work/">Work</a>
+          <a href="/uncliche/">Uncliché Your Brand</a>
           <a href="/b2b-marketing-consultant/">B2B Marketing Consultant</a>
           <a href="/brand-strategy/">Brand Strategy</a>
           <a href="/marketing-dach/">International Marketing</a>
@@ -1084,8 +1104,7 @@
     const html = document.documentElement;
     const key  = 'peticila-theme';
     const saved = localStorage.getItem(key);
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initial = saved ? saved : (prefersDark ? 'dark' : 'light');
+    const initial = saved ? saved : 'light';
     html.setAttribute('data-theme', initial);
     btn.textContent = initial === 'dark' ? 'light' : 'dark';
     btn.addEventListener('click', () => {
