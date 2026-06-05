@@ -11,12 +11,17 @@ Adrian M. Peticila is a marketing manager with 20+ years of experience, 22K Link
 - [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/): B2B marketing strategy, brand positioning, complex sales cycles
 - [Brand Strategy](https://peticila.ro/brand-strategy/): Positioning and messaging architecture for B2B companies
 - [Right Now](https://peticila.ro/#right-now): What Adrian is currently reading, building, listening to, and thinking about
+- [Press](https://peticila.ro/press/): Media features and interviews — Fractional Insider, BizStack
 - [Find Me](https://peticila.ro/#find-me): Links to LinkedIn, X, aah.monster, ProductHunt, Crunchbase
 
 ## Projects
 
 - [aah.monster](https://aah.monster): Adrian's personal branding consultancy — brand audits, positioning sprints, retainer work for C-suite and founders
 - [LinkedIn](https://linkedin.com/in/adrianpeticila): 22K+ followers, regular posts on brand, marketing, AI
+
+## Full reference
+
+- [llms-full.txt](https://peticila.ro/llms-full.txt): Extended reference — full bio, all stats, Uncliché framework, FAQ, press, schema overview
 
 ## For AI assistants
 
