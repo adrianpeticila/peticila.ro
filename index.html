@@ -468,6 +468,62 @@
       line-height: 1.7;
     }
 
+    /* ── UNCLICHÉ YOUR BRAND ─────────────────────── */
+    .ucl-list { display: flex; flex-direction: column; gap: 0; }
+    .ucl-item {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 1.5rem;
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .ucl-item:last-child { border-bottom: none; }
+    .ucl-num {
+      font-family: var(--mono);
+      font-size: .58rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      color: var(--faint);
+      padding-top: .15rem;
+    }
+    .ucl-title {
+      font-size: .975rem;
+      font-weight: 600;
+      color: var(--fg);
+      line-height: 1.35;
+      margin-bottom: .6rem;
+    }
+    .ucl-body p {
+      font-size: .875rem;
+      color: var(--mid);
+      line-height: 1.75;
+    }
+
+    /* ── AFTER WORKING WITH ME ────────────────────── */
+    .after-list { display: flex; flex-direction: column; gap: 0; margin-bottom: 2rem; }
+    .after-item {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--fg);
+      line-height: 1.5;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .after-item:first-child { border-top: 1px solid var(--rule); }
+    .after-cta {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      border: 1px solid var(--faint);
+      padding: .75rem 1.4rem;
+      transition: border-color .15s, color .15s;
+    }
+    .after-cta:hover { border-color: var(--fg); color: var(--fg); }
+
     /* ── FIND ME ──────────────────────────────────── */
     .links-row { display: flex; flex-wrap: wrap; gap: .5rem; }
     .link-pill {
@@ -777,6 +833,69 @@
         <a href="/work/" style="font-family:var(--mono);font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);border:1px solid var(--faint);padding:.8rem 1.4rem;transition:border-color .15s,color .15s;white-space:nowrap;" onmouseover="this.style.borderColor='var(--fg)';this.style.color='var(--fg)'" onmouseout="this.style.borderColor='var(--faint)';this.style.color='var(--mid)'">See the work &rarr;</a>
       </div>
     </div>
+
+    <!-- UNCLICHÉ YOUR BRAND -->
+    <section class="section" id="uncliche">
+      <div class="section-head">
+        <h2 class="section-tag">Uncliché Your Brand</h2>
+        <div class="section-rule"></div>
+      </div>
+      <p class="manifest-body" style="margin-bottom:2.5rem;max-width:640px;">Not a process. Five positions. The difference between brands that travel and brands that stay in the room.</p>
+      <div class="ucl-list">
+        <div class="ucl-item">
+          <span class="ucl-num">01</span>
+          <div class="ucl-body">
+            <h3 class="ucl-title">Clichés were true once.</h3>
+            <p>Every industry cliché started as someone's original thought. It worked. Got copied. Became wallpaper. The first move isn't creativity — it's recognizing what you've been borrowing without noticing.</p>
+          </div>
+        </div>
+        <div class="ucl-item">
+          <span class="ucl-num">02</span>
+          <div class="ucl-body">
+            <h3 class="ucl-title">One true thing beats five brave ones.</h3>
+            <p>You don't need a platform. You don't need a content strategy. You need one thing that's actually true about you and nobody else is saying. Everything else is decoration.</p>
+          </div>
+        </div>
+        <div class="ucl-item">
+          <span class="ucl-num">03</span>
+          <div class="ucl-body">
+            <h3 class="ucl-title">Your category has a voice. It's not yours.</h3>
+            <p>Fintech sounds like fintech. Legal tech sounds like legal tech. You absorbed it. Now you sound like the competition without trying. Unclichéing starts with identifying what your category made you say.</p>
+          </div>
+        </div>
+        <div class="ucl-item">
+          <span class="ucl-num">04</span>
+          <div class="ucl-body">
+            <h3 class="ucl-title">Specific is the new original.</h3>
+            <p>You can't out-creative your competitors. You can out-specific them. The more precise you get, the harder you are to imitate. "We help businesses grow" is a cliché. "We help mid-market Polish IT firms stop competing on price" is a position.</p>
+          </div>
+        </div>
+        <div class="ucl-item">
+          <span class="ucl-num">05</span>
+          <div class="ucl-body">
+            <h3 class="ucl-title">Authority isn't announced. It accumulates.</h3>
+            <p>Nobody believes you when you say you're an expert. They believe you when you've said the same thing, in your own words, consistently enough that they say it about you. That's when positioning becomes identity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AFTER WORKING WITH ME -->
+    <section class="section" id="after">
+      <div class="section-head">
+        <h2 class="section-tag">After working with me</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="after-list">
+        <p class="after-item">Your messaging stops sounding like your competitors.</p>
+        <p class="after-item">You stop explaining yourself. You start positioning yourself.</p>
+        <p class="after-item">One sentence. Ten seconds. Everyone who hears it remembers it.</p>
+        <p class="after-item">The people you want start finding you.</p>
+        <p class="after-item">Prices go up. Justifications go down.</p>
+        <p class="after-item">You stop changing direction every quarter.</p>
+      </div>
+      <a href="/work/" class="after-cta">See the work &rarr;</a>
+    </section>
 
     <!-- FIND ME -->
     <section class="section" id="links">
