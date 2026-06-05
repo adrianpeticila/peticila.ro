@@ -1,4 +1,5 @@
 .git
+.claude
 .wrangler
 .wranglerignore
 .assetsignore
