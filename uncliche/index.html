@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uncliché Your Brand — Adrian M. Peticila</title>
+  <meta name="description" content="A framework for brands that sound like everyone else. Five principles for stripping away the acceptable and finding what's actually there.">
+  <link rel="canonical" href="https://peticila.ro/uncliche/">
+  <meta property="og:title" content="Uncliché Your Brand — Adrian M. Peticila">
+  <meta property="og:description" content="A framework for brands that sound like everyone else. Five principles for stripping away the acceptable and finding what's actually there.">
+  <meta property="og:url" content="https://peticila.ro/uncliche/">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#060606">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F4EF">
+  <meta name="author" content="Adrian M. Peticila">
+  <link rel="preload" as="font" href="/fonts/Unbounded-900-normal.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/fonts/BricolageGrotesque-400-normal.woff2" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://peticila.ro/uncliche/",
+        "url": "https://peticila.ro/uncliche/",
+        "name": "Uncliché Your Brand — Adrian M. Peticila",
+        "description": "A framework for brands that sound like everyone else. Five principles for stripping away the acceptable and finding what's actually there.",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://peticila.ro/#website" },
+        "author": { "@id": "https://peticila.ro/#person" },
+        "dateModified": "2026-06-05"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://peticila.ro/" },
+          { "@type": "ListItem", "position": 2, "name": "Uncliché Your Brand", "item": "https://peticila.ro/uncliche/" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg:    #060606;
+      --bg2:   #0F0F0F;
+      --bg3:   #181818;
+      --fg:    #F0EBE0;
+      --mid:   #909088;
+      --faint: #3A3A38;
+      --red:   #D42020;
+      --rule:  #1A1A1A;
+      --name:  'Unbounded', sans-serif;
+      --body:  'Bricolage Grotesque', sans-serif;
+      --mono:  'DM Mono', monospace;
+    }
+    [data-theme="light"] {
+      --bg:    #F5F4EF;
+      --bg2:   #ECEAE4;
+      --bg3:   #E2E0DA;
+      --fg:    #060606;
+      --mid:   #555550;
+      --faint: #C0BEB8;
+      --rule:  #D8D6D0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    @font-face { font-family: 'Unbounded'; font-style: normal; font-weight: 900; font-display: swap; src: url('/fonts/Unbounded-900-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'DM Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/DMMono-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'DM Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/DMMono-500-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/BricolageGrotesque-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/BricolageGrotesque-500-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/BricolageGrotesque-600-normal.woff2') format('woff2'); }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: var(--body); background: var(--bg); color: var(--fg); line-height: 1.5; -webkit-font-smoothing: antialiased; transition: background .3s, color .3s; }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.1rem 2.5rem;
+      border-bottom: 1px solid var(--rule);
+      background: var(--bg);
+      transition: background .3s;
+    }
+    .nav-id { font-family: var(--mono); font-size: .65rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--mid); }
+    .nav-r { display: flex; align-items: center; gap: 2rem; }
+    .nav-a { font-family: var(--mono); font-size: .65rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); transition: color .15s; }
+    .nav-a:hover { color: var(--fg); }
+    .nav-a.active { color: var(--fg); }
+    .nav-theme { background: none; border: 1px solid var(--faint); padding: .3rem .7rem; font-family: var(--mono); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); cursor: pointer; transition: border-color .15s, color .15s; }
+    .nav-theme:hover { border-color: var(--fg); color: var(--fg); }
+
+    /* WRAP */
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 2.5rem; }
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 7rem 2.5rem 6rem; }
+
+    /* BREADCRUMB */
+    .bc { font-family: var(--mono); font-size: .6rem; color: var(--mid); letter-spacing: .15em; text-transform: uppercase; margin-bottom: 2.5rem; }
+    .bc a { color: var(--red); }
+
+    /* HEADER */
+    .label { font-family: var(--mono); font-size: .6rem; letter-spacing: .22em; text-transform: uppercase; color: var(--mid); margin-bottom: 1rem; }
+    .page-h1 { font-family: var(--name); font-size: 2.8rem; font-weight: 900; letter-spacing: -.01em; line-height: 1.0; color: var(--fg); margin-bottom: 1.5rem; }
+    .page-lead { font-size: 1.05rem; color: var(--mid); line-height: 1.8; margin-bottom: 2.5rem; max-width: 620px; }
+    .page-lead strong { color: var(--fg); }
+
+    /* ANSWER BOX */
+    .answer-box { border-left: 3px solid var(--red); padding: 1.2rem 1.5rem; background: var(--bg2); margin-bottom: 3rem; }
+    .answer-label { font-family: var(--mono); font-size: .57rem; text-transform: uppercase; letter-spacing: .2em; color: var(--red); margin-bottom: .5rem; }
+    .answer-box p { font-size: .93rem; color: rgba(240,235,224,.75); line-height: 1.75; }
+    [data-theme="light"] .answer-box p { color: rgba(6,6,6,.65); }
+
+    /* SECTIONS */
+    .section { margin-bottom: 3rem; }
+    .section h2 { font-family: var(--name); font-size: 1.2rem; letter-spacing: .02em; color: var(--fg); margin-bottom: 1.5rem; }
+    .section p { font-size: .95rem; color: var(--mid); line-height: 1.8; margin-bottom: .9rem; }
+    .section p strong { color: var(--fg); }
+
+    /* PRINCIPLES */
+    .principle { border-bottom: 1px solid var(--rule); padding: 1.4rem 0; }
+    .principle:last-child { border-bottom: none; }
+    .principle-num { font-family: var(--mono); font-size: .57rem; text-transform: uppercase; letter-spacing: .2em; color: var(--red); margin-bottom: .4rem; }
+    .principle-title { font-family: var(--body); font-weight: 600; font-size: .95rem; color: var(--fg); margin-bottom: .5rem; }
+    .principle-body { font-size: .88rem; color: var(--mid); line-height: 1.72; }
+
+    /* BEFORE / AFTER */
+    .before-after { background: var(--bg2); border: 1px solid var(--rule); padding: 1.5rem; margin-bottom: 3rem; }
+    .ba-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .ba-label { font-family: var(--mono); font-size: .55rem; text-transform: uppercase; letter-spacing: .2em; color: var(--mid); margin-bottom: .5rem; }
+    .ba-text { font-size: .88rem; line-height: 1.65; }
+    .ba-before .ba-text { color: var(--mid); opacity: .5; }
+    .ba-after .ba-text { color: var(--fg); }
+    .ba-note { font-family: var(--mono); font-size: .7rem; color: var(--mid); margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+
+    /* CTA */
+    .cta-block { background: var(--bg3); border: 1px solid var(--rule); border-left: 3px solid var(--red); padding: 2rem; margin-bottom: 3rem; }
+    .cta-block h3 { font-family: var(--name); font-size: 1rem; color: var(--fg); margin-bottom: .6rem; letter-spacing: .03em; }
+    .cta-block p { font-size: .88rem; color: var(--mid); margin-bottom: 1.2rem; line-height: 1.65; }
+    .btn-row { display: flex; gap: .8rem; flex-wrap: wrap; }
+    .btn-red { display: inline-flex; align-items: center; background: var(--red); color: #F0EBE0; font-family: var(--mono); font-size: .72rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; padding: .75rem 1.5rem; }
+    .btn-ghost { display: inline-flex; align-items: center; border: 1px solid var(--faint); color: var(--mid); font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; padding: .75rem 1.5rem; }
+
+    /* RELATED */
+    .also { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+    .also p { font-family: var(--mono); font-size: .58rem; color: var(--mid); text-transform: uppercase; letter-spacing: .15em; margin-bottom: .8rem; }
+    .also-links { display: flex; gap: .6rem; flex-wrap: wrap; }
+    .also-links a { font-family: var(--mono); font-size: .65rem; color: var(--red); border: 1px solid rgba(212,32,32,.3); padding: .35rem .8rem; }
+
+    /* FOOTER */
+    footer { padding: 2.5rem 0; border-top: 1px solid var(--rule); }
+    .footer-inner { display: flex; flex-wrap: wrap; gap: .6rem 2rem; font-family: var(--mono); font-size: .6rem; color: var(--mid); letter-spacing: .06em; }
+    .footer-inner a { color: var(--mid); transition: color .15s; }
+    .footer-inner a:hover { color: var(--red); }
+    .footer-pages { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; font-family: var(--mono); font-size: .6rem; color: var(--mid); letter-spacing: .06em; margin-bottom: 1rem; }
+    .footer-pages span { color: var(--faint); text-transform: uppercase; letter-spacing: .12em; }
+    .footer-pages a { color: var(--mid); transition: color .15s; }
+    .footer-pages a:hover { color: var(--red); }
+
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-r .nav-a { display: none; }
+      .page-h1 { font-size: 2rem; }
+      .ba-row { grid-template-columns: 1fr; }
+      .page-wrap { padding: 6rem 1.25rem 4rem; }
+    }
+    [data-theme="dark"] .formkit-submit { background: var(--red) !important; color: #F0EBE0 !important; }
+    [data-theme="dark"] .formkit-input { background: var(--bg2) !important; color: var(--fg) !important; border-color: var(--faint) !important; }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="nav-id">peticila.ro</span>
+    <div class="nav-r">
+      <a href="/#who" class="nav-a">Who I am</a>
+      <a href="/#for" class="nav-a">Who this is for</a>
+      <a href="/uncliche/" class="nav-a active">Uncliché</a>
+      <a href="/manifesto/" class="nav-a">Manifesto</a>
+      <a href="/about/" class="nav-a">About</a>
+      <a href="https://aah.monster" target="_blank" rel="noopener" class="nav-a">aah.monster ↗</a>
+      <button class="nav-theme" id="themeBtn">light</button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <p class="bc"><a href="/">peticila.ro</a> / uncliche</p>
+    <p class="label">Framework</p>
+    <h1 class="page-h1">Uncliché<br>Your Brand</h1>
+    <p class="page-lead">A framework for brands that sound like everyone else. <strong>The problem isn't that you're generic. It's that you followed the right advice.</strong></p>
+
+    <div class="answer-box">
+      <p class="answer-label">The actual problem</p>
+      <p>"Be professional." "Focus on benefits." "Keep it simple." "Maintain a consistent tone." All correct. Everyone follows them. When everyone optimizes for the same standards, the output looks the same — safe, competent, and impossible to remember. Uncliché Your Brand is a framework for reversing that.</p>
+    </div>
+
+    <div class="section">
+      <h2>What it is</h2>
+      <p>Not a rebrand. Not a visual refresh. Not another messaging exercise.</p>
+      <p>It's a process of stripping away everything a brand accumulated while trying to sound acceptable, and finding what's actually there. <strong>Most brands have a real position buried underneath the polished language.</strong> The work is locating it, then having the nerve to lead with it.</p>
+    </div>
+
+    <div class="section">
+      <h2>The five principles</h2>
+      <div class="principle">
+        <p class="principle-num">01</p>
+        <p class="principle-title">Intentional friction</p>
+        <p class="principle-body">A brand that offends nobody convinces nobody. If your message can be signed by any competitor in your space, it's not your message. The goal isn't to be provocative. It's to be specific enough that the wrong people self-select out.</p>
+      </div>
+      <div class="principle">
+        <p class="principle-num">02</p>
+        <p class="principle-title">Convictions over features</p>
+        <p class="principle-body">"We're client-focused" is a feature. "We think most agencies charge for the privilege of reformatting what you already know" is a conviction. One of these builds a brand. The other fills a deck.</p>
+      </div>
+      <div class="principle">
+        <p class="principle-num">03</p>
+        <p class="principle-title">Brutal specificity</p>
+        <p class="principle-body">"I help entrepreneurs grow" is smoke. "I work with B2B SaaS founders past €500k ARR who don't know where the next 30% comes from" is a brand. The more specific you are, the more relevant you become to the right buyer.</p>
+      </div>
+      <div class="principle">
+        <p class="principle-num">04</p>
+        <p class="principle-title">Voice before message</p>
+        <p class="principle-body">People don't remember what you said. They remember how it felt to read you. Voice is a bigger brand asset than any tagline.</p>
+      </div>
+      <div class="principle">
+        <p class="principle-num">05</p>
+        <p class="principle-title">Consistency without rigidity</p>
+        <p class="principle-body">Brand consistency doesn't mean sounding identical across every channel. It means people always know it's you, regardless of format. The character is fixed. The costume can change.</p>
+      </div>
+    </div>
+
+    <div class="before-after">
+      <div class="ba-row">
+        <div class="ba-before">
+          <p class="ba-label">Before</p>
+          <p class="ba-text">"A digital marketing agency focused on sustainable growth and measurable ROI for ambitious businesses."</p>
+        </div>
+        <div class="ba-after">
+          <p class="ba-label">After</p>
+          <p class="ba-text">"We do marketing for companies that are tired of paying for pretty reports."</p>
+        </div>
+      </div>
+      <p class="ba-note">Same agency. One thing changed: they stopped being afraid.</p>
+    </div>
+
+    <div class="section">
+      <h2>How I use it</h2>
+      <p>This is the framework behind the brand work I do through <a href="https://aah.monster/" style="color:var(--red);">Aah, Monster!</a> It started as a checklist for client audits. It became the lens for every positioning conversation I've had since.</p>
+    </div>
+
+    <div class="cta-block">
+      <h3>Apply it to your brand</h3>
+      <p>If you want to understand how it applies to your specific situation, get in touch.</p>
+      <div class="btn-row">
+        <a href="https://aah.monster/" class="btn-red">Work with me →</a>
+      </div>
+    </div>
+
+    <div class="section" id="subscribe" style="margin-top:3rem;">
+      <h2>Get the framework</h2>
+      <p>I break it down further in the email list — one piece at a time, no noise.</p>
+      <script async data-uid="181bc354c6" src="https://adrian-m-peticila.kit.com/181bc354c6/index.js"></script>
+    </div>
+
+    <div class="also">
+      <p>Related</p>
+      <div class="also-links">
+        <a href="/brand-strategy/">Brand Strategy</a>
+        <a href="/b2b-marketing-consultant/">B2B Marketing Consulting</a>
+        <a href="/manifesto/">Manifesto</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-pages">
+        <span>Pages</span>
+        <a href="/about/">About</a>
+        <a href="/manifesto/">Manifesto</a>
+        <a href="/uncliche/">Uncliché Your Brand</a>
+        <a href="/b2b-marketing-consultant/">B2B Marketing Consultant</a>
+        <a href="/brand-strategy/">Brand Strategy</a>
+        <a href="/marketing-dach/">International Marketing</a>
+      </div>
+      <div class="footer-inner">
+        <span>Published by <a href="https://peticila.ro/" style="color:inherit;text-decoration:underline;">Adrian M. Peticila</a> &copy; 2026</span>
+        <span><time datetime="2026-06-05">Updated June 2026</time></span>
+        <span>
+          <a href="https://aah.monster">aah.monster</a>
+          &nbsp;&middot;&nbsp;
+          Contact: <a href="mailto:adrian@peticila.ro">adrian@peticila.ro</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn  = document.getElementById('themeBtn');
+    const html = document.documentElement;
+    const key  = 'peticila-theme';
+    const saved = localStorage.getItem(key);
+    const initial = saved ? saved : 'light';
+    html.setAttribute('data-theme', initial);
+    btn.textContent = initial === 'dark' ? 'light' : 'dark';
+    btn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem(key, next);
+      btn.textContent = next === 'dark' ? 'light' : 'dark';
+    });
+  </script>
+</body>
+</html>
