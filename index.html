@@ -293,7 +293,10 @@
       color: var(--mid);
       line-height: 1.8;
     }
+    .hero-bio { margin-bottom: 1rem; }
+    .hero-bio:last-of-type { margin-bottom: 0; }
     .hero-bio strong { color: var(--fg); font-weight: 600; }
+    .hero-bio--facts { color: var(--fg); font-weight: 500; font-size: .88rem; }
 
     /* Stats bar */
     .hero-stats {
@@ -691,7 +694,11 @@
             You're here for one of three reasons: someone passed my name along,
             you found something I wrote, or you're doing due diligence before a conversation.
             All three are fine.
+          </p>
+          <p class="hero-bio hero-bio--facts">
             20 years in marketing. 3 CMO tracks in financial services, fintech, and B2B software. 29 brands built or repositioned across 20+ markets, on 5 continents.
+          </p>
+          <p class="hero-bio">
             Currently CMO. I find where a brand is lying to itself. Say it plainly. Fix it.
             Founder of <strong>Aah, Monster!</strong>. I apply the same thinking to the person running the company.
             If there's a fit, you'll know after three minutes on this page.
