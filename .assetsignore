@@ -8,4 +8,3 @@ package-lock.json
 .assetsignore
 *.md
 og-image-source.html
-llms-full.txt
