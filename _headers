@@ -1,6 +1,11 @@
 # Cloudflare Pages — custom headers
-# Security headers are set via Cloudflare Transform Rules (S53).
+# Most security headers are set via Cloudflare Transform Rules (S53).
+# HSTS added here (S122) — was missing from the Transform Rule set.
 # This file handles MIME types, CORS, and cache for static assets.
+
+# HSTS — force HTTPS for 1 year (no preload, reversible)
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 # Self-hosted fonts — CORS required for @font-face cross-origin
 /fonts/*
