@@ -23,6 +23,31 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Person",
+        "@id": "https://peticila.ro/#person",
+        "name": "Adrian M. Peticila",
+        "alternateName": ["Adrian Peticila", "Adrian M Peticila"],
+        "url": "https://peticila.ro/",
+        "jobTitle": "CMO & Brand Strategist",
+        "disambiguatingDescription": "Adrian M. Peticila is a Romanian marketing professional — a person, not a retail store or product brand. CMO and brand strategist with 20+ years of experience. Founder of Aah, Monster! personal branding consultancy.",
+        "sameAs": [
+          "https://www.linkedin.com/in/adrian-peticila/",
+          "https://x.com/adrianmpeticila",
+          "https://twitter.com/adrianmpeticila",
+          "https://github.com/adrianpeticila",
+          "https://aah.monster/",
+          "https://www.producthunt.com/@adrian_m_peticila",
+          "https://www.crunchbase.com/person/adrian-peticila",
+          "https://gravatar.com/adrianmpeticila",
+          "https://about.me/adrian.peticila",
+          "https://www.quora.com/profile/Adrian-M-Peticila",
+          "https://app.qwoted.com/sources/adrian-m-peticila",
+          "https://indieweb.org/User:Peticila.ro",
+          "https://fractionalinsider.com/from-full-time-exec-to-fractional-leader-how-adrian-peticila-delivers-fast-measurable-results/",
+          "https://bizstack.tech/adrian-m-peticila/"
+        ]
+      },
+      {
         "@type": "ProfilePage",
         "@id": "https://peticila.ro/about/#page",
         "url": "https://peticila.ro/about/",
@@ -107,6 +132,12 @@
     .press-title { font-size: 0.88rem; color: var(--fg); text-decoration: none; }
     .press-title:hover { text-decoration: underline; }
 
+    .profile-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 1.5rem; margin-top: 1.25rem; }
+    .profile { display: flex; flex-direction: column; gap: 0.15rem; border-left: 2px solid var(--faint); padding-left: 0.9rem; text-decoration: none; transition: border-color .15s; }
+    .profile:hover { border-left-color: var(--red); }
+    .profile-net { font-size: 0.85rem; color: var(--fg); }
+    .profile-h { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em; color: var(--faint); }
+
     footer { padding: 2rem 0; }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em; color: var(--faint); }
     .footer-inner a { color: var(--mid); text-decoration: none; }
@@ -114,6 +145,7 @@
 
     @media (max-width: 600px) {
       .stat-grid { grid-template-columns: 1fr 1fr; }
+      .profile-list { grid-template-columns: 1fr; }
       nav { padding: 1rem 1.5rem; }
       .wrap { padding: 0 1.5rem; }
       .hero { padding: 3rem 0 2rem; }
@@ -183,6 +215,25 @@
           <span class="press-source">BizStack</span>
           <a href="https://bizstack.tech/adrian-m-peticila/" class="press-title" target="_blank" rel="noopener">Adrian M. Peticila — CMO, Brand Strategist & Founder of Aah, Monster!</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-tag">Elsewhere</span>
+      <h2>find me</h2>
+      <p>The same person across the web. If a profile isn't linked here, it isn't me.</p>
+      <div class="profile-list">
+        <a class="profile" href="https://www.linkedin.com/in/adrian-peticila/" rel="me noopener" target="_blank"><span class="profile-net">LinkedIn</span><span class="profile-h">in/adrian-peticila</span></a>
+        <a class="profile" href="https://x.com/adrianmpeticila" rel="me noopener" target="_blank"><span class="profile-net">X / Twitter</span><span class="profile-h">@adrianmpeticila</span></a>
+        <a class="profile" href="https://github.com/adrianpeticila" rel="me noopener" target="_blank"><span class="profile-net">GitHub</span><span class="profile-h">adrianpeticila</span></a>
+        <a class="profile" href="https://aah.monster/" rel="noopener" target="_blank"><span class="profile-net">Aah, Monster!</span><span class="profile-h">aah.monster</span></a>
+        <a class="profile" href="https://www.crunchbase.com/person/adrian-peticila" rel="me noopener" target="_blank"><span class="profile-net">Crunchbase</span><span class="profile-h">person/adrian-peticila</span></a>
+        <a class="profile" href="https://www.producthunt.com/@adrian_m_peticila" rel="me noopener" target="_blank"><span class="profile-net">Product Hunt</span><span class="profile-h">@adrian_m_peticila</span></a>
+        <a class="profile" href="https://gravatar.com/adrianmpeticila" rel="me noopener" target="_blank"><span class="profile-net">Gravatar</span><span class="profile-h">adrianmpeticila</span></a>
+        <a class="profile" href="https://about.me/adrian.peticila" rel="me noopener" target="_blank"><span class="profile-net">About.me</span><span class="profile-h">adrian.peticila</span></a>
+        <a class="profile" href="https://www.quora.com/profile/Adrian-M-Peticila" rel="me noopener" target="_blank"><span class="profile-net">Quora</span><span class="profile-h">Adrian-M-Peticila</span></a>
+        <a class="profile" href="https://app.qwoted.com/sources/adrian-m-peticila" rel="me noopener" target="_blank"><span class="profile-net">Qwoted</span><span class="profile-h">expert source</span></a>
+        <a class="profile" href="https://indieweb.org/User:Peticila.ro" rel="me noopener" target="_blank"><span class="profile-net">IndieWeb</span><span class="profile-h">User:Peticila.ro</span></a>
       </div>
     </section>
 
