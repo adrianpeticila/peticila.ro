@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "deploy": "wrangler deploy && npm run security",
+    "security": "../../utils/security_exposure_check.sh peticila.ro"
+  },
   "devDependencies": {
     "wrangler": "^4.98.0"
   }
