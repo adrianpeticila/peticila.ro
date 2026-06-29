@@ -8,3 +8,8 @@ package-lock.json
 .assetsignore
 *.md
 og-image-source.html
+.DS_Store
+**/.DS_Store
+*.sh
+*.log
+peticila_*.html
