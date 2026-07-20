@@ -1,5 +1,6 @@
 .git
 .gitignore
+.siteverify-allow
 .claude
 node_modules
 wrangler.jsonc
