@@ -1,6 +1,8 @@
 .git
+.gitignore
 .claude
 node_modules
+wrangler.jsonc
 package.json
 package-lock.json
 .wrangler
