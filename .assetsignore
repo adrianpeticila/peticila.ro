@@ -9,7 +9,9 @@ package-lock.json
 .wrangler
 .wranglerignore
 .assetsignore
-*.md
+# Gemenii .md ai paginilor SE publica (model platform.claude.com).
+# Doar README.md ramane exclus — sintaxa gitignore, fara comentarii pe rand.
+README.md
 og-image-source.html
 .DS_Store
 **/.DS_Store

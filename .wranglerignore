@@ -1,4 +1,6 @@
 .git
 .wrangler
-*.md
+# Gemenii .md ai paginilor SE publica (model platform.claude.com).
+# Doar README.md ramane exclus — sintaxa gitignore, fara comentarii pe rand.
+README.md
 og-image-source.html

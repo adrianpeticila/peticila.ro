@@ -6,3 +6,15 @@
 # reala a HSTS-ului de pe peticila.ro.
 _headers
 _redirects
+
+# Gemenii .md ai paginilor: acelasi continut ca HTML-ul, servit pentru
+# crawlere LLM. Generati de gen_md_twins.py, nu editati de mana.
+about.md
+b2b-marketing-consultant.md
+brand-strategy.md
+index.md
+manifesto.md
+marketing-dach.md
+press.md
+uncliche.md
+work.md

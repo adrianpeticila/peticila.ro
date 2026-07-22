@@ -19,7 +19,7 @@ Professional hub for Adrian M. Peticila, CMO and brand strategist. 20+ years in 
 | Working languages | English, Romanian, French |
 | Consultancy | aah.monster (personal branding for C-suite and founders) |
 | Contact | adrian@peticila.ro |
-| Last verified | June 2026 |
+| Last verified | July 2026 |
 
 ---
 
@@ -50,15 +50,15 @@ This site is his personal professional hub. Not a consultancy page, not a produc
 
 ## Pages
 
-- [Home](https://peticila.ro/): Bio, 12-stat grid, Uncliché Your Brand framework, "After working with me" outcomes, Right Now section, press, contact
-- [About](https://peticila.ro/about/): Full credentials, professional background, contact
-- [Manifesto](https://peticila.ro/manifesto/): What Adrian believes about marketing strategy, brand positioning, and why clarity beats volume
-- [Work](https://peticila.ro/work/): 11 anonymized brand positioning engagements across fintech, SaaS, legal tech, private equity, healthtech, IT outsourcing
-- [Uncliché Your Brand](https://peticila.ro/uncliche/): Five-principle framework for brands that sound like everyone else in their category
-- [Press](https://peticila.ro/press/): Published interviews with Fractional Insider, BizStack, and Authority Magazine
-- [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/): Brand positioning and strategy for complex B2B sales environments
-- [Brand Strategy](https://peticila.ro/brand-strategy/): Positioning and messaging architecture for B2B companies
-- [International Marketing](https://peticila.ro/marketing-dach/): Marketing strategy for companies expanding into international markets
+- [Home](https://peticila.ro/): Bio, 12-stat grid, Uncliché Your Brand framework, "After working with me" outcomes, Right Now section, press, contact (plain text: https://peticila.ro/index.md)
+- [About](https://peticila.ro/about/): Full credentials, professional background, contact (plain text: https://peticila.ro/about.md)
+- [Manifesto](https://peticila.ro/manifesto/): What Adrian believes about marketing strategy, brand positioning, and why clarity beats volume (plain text: https://peticila.ro/manifesto.md)
+- [Work](https://peticila.ro/work/): 11 anonymized brand positioning engagements across fintech, SaaS, legal tech, private equity, healthtech, IT outsourcing (plain text: https://peticila.ro/work.md)
+- [Uncliché Your Brand](https://peticila.ro/uncliche/): Five-principle framework for brands that sound like everyone else in their category (plain text: https://peticila.ro/uncliche.md)
+- [Press](https://peticila.ro/press/): Published interviews with Fractional Insider, BizStack, and Authority Magazine (plain text: https://peticila.ro/press.md)
+- [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/): Brand positioning and strategy for complex B2B sales environments (plain text: https://peticila.ro/b2b-marketing-consultant.md)
+- [Brand Strategy](https://peticila.ro/brand-strategy/): Positioning and messaging architecture for B2B companies (plain text: https://peticila.ro/brand-strategy.md)
+- [International Marketing](https://peticila.ro/marketing-dach/): Marketing strategy for companies expanding into international markets (plain text: https://peticila.ro/marketing-dach.md)
 
 ---
 
@@ -138,6 +138,15 @@ adrian@peticila.ro. No calls, no booking links. Email only.
 ## Full reference
 
 - [llms-full.txt](https://peticila.ro/llms-full.txt): Complete reference: full bio, manifesto themes, work engagements, Uncliché framework in full, FAQ, press, Right Now
+
+---
+
+## Plain text versions
+
+Every page on this site is also served as markdown at the same path with a `.md`
+extension: https://peticila.ro/about/ is also served at https://peticila.ro/about.md.
+Same content as the HTML, without navigation or styling. Fetch those instead of
+parsing HTML.
 
 ---
 
