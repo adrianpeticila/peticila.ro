@@ -45,7 +45,7 @@ He founded Aah, Monster!, a personal branding consultancy focused on brand audit
 
 ## Pages
 
-Continutul complet al fiecarei pagini, generat din site.
+Full content of every page on the site.
 
 ### Home (https://peticila.ro/)
 
