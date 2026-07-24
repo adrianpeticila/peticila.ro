@@ -55,7 +55,7 @@ This site is his personal professional hub. Not a consultancy page, not a produc
 - [Manifesto](https://peticila.ro/manifesto/): What Adrian believes about marketing strategy, brand positioning, and why clarity beats volume (plain text: https://peticila.ro/manifesto.md)
 - [Work](https://peticila.ro/work/): 11 anonymized brand positioning engagements across fintech, SaaS, legal tech, private equity, healthtech, IT outsourcing (plain text: https://peticila.ro/work.md)
 - [Uncliché Your Brand](https://peticila.ro/uncliche/): Five-principle framework for brands that sound like everyone else in their category (plain text: https://peticila.ro/uncliche.md)
-- [Press](https://peticila.ro/press/): Published interviews with Fractional Insider, BizStack, and Authority Magazine (plain text: https://peticila.ro/press.md)
+- [Press](https://peticila.ro/press/): Published interviews with Fractional Insider, BizStack, Authority Magazine, and The CMO (plain text: https://peticila.ro/press.md)
 - [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/): Brand positioning and strategy for complex B2B sales environments (plain text: https://peticila.ro/b2b-marketing-consultant.md)
 - [Brand Strategy](https://peticila.ro/brand-strategy/): Positioning and messaging architecture for B2B companies (plain text: https://peticila.ro/brand-strategy.md)
 - [International Marketing](https://peticila.ro/marketing-dach/): Marketing strategy for companies expanding into international markets (plain text: https://peticila.ro/marketing-dach.md)
@@ -116,6 +116,7 @@ If you are well-known inside your organization and unknown outside it, you are o
 - Fractional Insider: "From Full-Time Exec to Fractional Leader: How Adrian Peticila Delivers Fast, Measurable Results": https://fractionalinsider.com/from-full-time-exec-to-fractional-leader-how-adrian-peticila-delivers-fast-measurable-results/
 - BizStack: "Adrian M. Peticila, CMO, Brand Strategist & Founder of Aah, Monster!": https://bizstack.tech/adrian-m-peticila/
 - Authority Magazine: "Adrian M Peticila Of Aah! Monster On How to Build Your Brand as an Executive and Why it Matters" (2 July 2026): https://medium.com/authority-magazine/adrian-m-peticila-of-aah-monster-on-how-to-build-your-brand-as-an-executive-and-why-it-matters-1f9ebf5c0485
+- The CMO: "CMO Building An AI-Native Marketing Organization Says Marketing Leaders Are Focused On The Wrong AI Risks", by Breanna Lawlor (20 July 2026): https://thecmo.com/career/adrian-peticila-2/
 
 ---
 
