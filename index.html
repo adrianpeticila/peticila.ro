@@ -741,6 +741,63 @@
 <body>
   <a href="#hero" class="skip-link">Skip to main content</a>
 
+  <style>
+    /* ── HYDRA STAMP ─────────────── */
+    .hydra-stamp {
+      position: fixed;
+      right: 2rem;
+      bottom: 2rem;
+      z-index: 200;
+      width: 7.6rem;
+      height: 7.6rem;
+      border-radius: 50%;
+      background: var(--red);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: .25rem;
+      text-align: center;
+      transform: rotate(-8deg);
+      transition: transform .2s ease, box-shadow .2s ease;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(212,32,32,.45), 0 0 0 1px rgba(0,0,0,.06);
+    }
+    .hydra-stamp:hover { transform: rotate(-8deg) scale(1.08);
+                         box-shadow: 0 8px 30px rgba(212,32,32,.6), 0 0 0 1px rgba(0,0,0,.06); }
+    .hydra-stamp svg { width: 2.2rem; height: 2.2rem; }
+    .hydra-stamp-label {
+      font-family: var(--name);
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1.1;
+    }
+    @media (max-width: 700px) {
+      .hydra-stamp { width: 6rem; height: 6rem; right: 1.2rem; bottom: 1.2rem; }
+      .hydra-stamp svg { width: 1.8rem; height: 1.8rem; }
+      .hydra-stamp-label { font-size: .82rem; }
+    }
+  </style>
+  <a class="hydra-stamp" href="https://hydra.peticila.ro" target="_blank" rel="noopener" aria-label="Hydra — the side project shelf">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M32 54 C32 40 32 34 32 26" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M32 34 C24 30 18 24 14 14" stroke="#fff" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      <path d="M32 30 C34 22 34 16 30 8" stroke="#fff" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      <path d="M32 34 C40 30 46 24 50 14" stroke="#fff" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      <circle cx="12" cy="11" r="4.6" fill="#fff"/>
+      <circle cx="29" cy="6" r="4.6" fill="#fff"/>
+      <circle cx="52" cy="11" r="4.6" fill="#fff"/>
+      <circle cx="10.2" cy="9.6" r="1" fill="var(--red)"/>
+      <circle cx="27.2" cy="4.6" r="1" fill="var(--red)"/>
+      <circle cx="50.2" cy="9.6" r="1" fill="var(--red)"/>
+      <ellipse cx="32" cy="56" rx="8" ry="4" fill="#fff"/>
+    </svg>
+    <span class="hydra-stamp-label">HYDRA</span>
+  </a>
+
   <nav>
     <span class="nav-id">peticila.ro</span>
     <div class="nav-r">
