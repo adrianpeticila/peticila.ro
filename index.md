@@ -168,11 +168,13 @@ P. 004 — Find me
 
 P. 005 — Right now
 
+Updated 30 Jul 2026
+
 Listening Iron Maiden + Eric Satie the range is the point
 
 Reading The Stranger Camus. third time through
 
-Building aah.monster one brand at a time
+Building Hydra the shelf keeps growing
 
 Thinking about Why most personal brands are obituaries written in advance.  
 

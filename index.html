@@ -664,6 +664,55 @@
       display: block;
     }
 
+    /* date seal: the section claims it is updated by hand, so it has to say when */
+    .now-seal {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin-left: auto;
+      padding: .3rem .7rem;
+      border: 1px solid var(--red);
+      color: var(--red);
+      font-family: var(--mono);
+      font-size: .58rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      white-space: nowrap;
+    }
+    /* engraved band, same plates and same treatment as the Hydra shelf */
+    .now-plate {
+      margin: 0;
+      border-top: 1px solid var(--rule);
+      background: var(--bg);
+      overflow: hidden;
+    }
+    .now-plate .frame { height: 8.5rem; overflow: hidden; background: var(--bg); }
+    .now-plate figcaption {
+      font-family: var(--mono);
+      font-size: .55rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      padding: .8rem 1.5rem 0;
+    }
+    .now-plate figcaption a { color: var(--mid); }
+    @media (max-width: 700px) { .now-plate .frame { height: 6rem; } }
+    .now-plate img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 22%;
+      mix-blend-mode: screen;
+      filter: grayscale(1) contrast(1.45) brightness(1.04) invert(1);
+    }
+    [data-theme="light"] .now-plate img {
+      mix-blend-mode: multiply;
+      filter: grayscale(1) contrast(1.45) brightness(1.04);
+    }
+
     /* ── PRESS ────────────────────────────────────── */
     .press-list { display: flex; flex-direction: column; gap: .4rem; }
     .press-item {
@@ -826,7 +875,7 @@
       <div class="hero-bottom">
         <div>
           <span class="hero-tag">CMO · Brand Strategist · Bucharest</span>
-          <address style="font-style:normal;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:1rem;"><a rel="author" href="https://peticila.ro/" style="color:var(--faint);text-decoration:none;">Adrian M. Peticila</a> &middot; <time datetime="2026-06-05">Updated June 2026</time></address>
+          <address style="font-style:normal;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:1rem;"><a rel="author" href="https://peticila.ro/" style="color:var(--faint);text-decoration:none;">Adrian M. Peticila</a> &middot; <time datetime="2026-08-01">Updated August 2026</time></address>
           <p id="dyn-intro" style="display:none;font-family:var(--mono);font-size:0.67rem;letter-spacing:0.08em;color:var(--red);text-transform:uppercase;margin-bottom:0.9rem;"></p>
           <p class="hero-bio">
             You're here for one of three reasons: someone passed my name along,
@@ -1100,6 +1149,7 @@
       <div class="section-head">
         <h2 class="section-tag">Right now</h2>
         <div class="section-rule"></div>
+        <span class="now-seal">Updated 30 Jul 2026</span>
       </div>
       <span class="pg">P. 005 — Right now</span>
       <div class="now-grid">
@@ -1115,8 +1165,8 @@
         </div>
         <div class="now-item">
           <span class="now-label">Building</span>
-          <span class="now-val">aah.monster</span>
-          <span class="now-sub">one brand at a time</span>
+          <span class="now-val">Hydra</span>
+          <span class="now-sub">the shelf keeps growing</span>
         </div>
         <div class="now-item">
           <span class="now-label">Thinking about</span>
@@ -1134,6 +1184,12 @@
           <span class="now-sub">someone has to.</span>
         </div>
       </div>
+      <figure class="now-plate">
+        <div class="frame">
+          <img src="/img/bep-franklin.jpg" alt="Banknote engraving: Franklin drawing electricity from the sky" width="560" height="664" loading="lazy">
+        </div>
+        <figcaption>Bureau of Engraving and Printing, public domain, restored by Godot13, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license nofollow">CC BY-SA 3.0</a>.</figcaption>
+      </figure>
     </section>
 
     <!-- PRESS -->
@@ -1243,7 +1299,7 @@
         </div>
         <div class="footer-inner">
           <span>Published by <a rel="author" href="#about" style="color:inherit;text-decoration:underline;">Adrian M. Peticila</a> &copy; 2026</span>
-          <span><time datetime="2026-06-05">Updated June 2026</time></span>
+          <span><time datetime="2026-08-01">Updated August 2026</time></span>
           <span>
             <a href="https://www.linkedin.com/in/adrian-peticila/" rel="me noopener" target="_blank">LinkedIn</a>
             &nbsp;&middot;&nbsp;
