@@ -4,7 +4,7 @@ adrian m. peticila
 
 CMO · Brand Strategist · Bucharest
 
-[Adrian M. Peticila](https://peticila.ro/) · Updated June 2026
+[Adrian M. Peticila](https://peticila.ro/) · Updated August 2026
 
 You're here for one of three reasons: someone passed my name along, you found something I wrote, or you're doing due diligence before a conversation. All three are fine.
 
@@ -176,7 +176,7 @@ Reading The Stranger Camus. third time through
 
 Building Hydra the shelf keeps growing
 
-Thinking about Why most personal brands are obituaries written in advance.  
+Thinking about Software got free. Taste didn't.  
 
 City Bucharest, RO loud, chaotic, occasionally brilliant
 
