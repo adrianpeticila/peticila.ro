@@ -8,7 +8,7 @@ Most international companies entering DACH translate their existing playbook. Th
 
 ## What makes DACH different
 
-Based on direct analysis of 100+ outreach sequences targeting German-speaking markets, the key differences are consistent: **cold email open rates in DACH average 15-20% lower than comparable US campaigns**. Reply rates to generic outreach are near zero for mid-market and enterprise buyers.
+Based on direct analysis of 100+ outreach sequences targeting German-speaking markets, the key differences are consistent: **cold email in DACH gets opened less than the same sequence pointed at US buyers**. Reply rates to generic outreach are near zero for mid-market and enterprise buyers.
 
 What works in DACH: specificity over scale (a personalized outreach to 50 accounts beats 500 templated emails), engineering credibility (DACH buyers want to understand the technology, not just the ROI), and patience (decision cycles for €50k+ deals routinely take 6-12 months even after initial interest).
 

@@ -10,7 +10,7 @@ Brand strategy is the set of decisions that makes every other marketing decision
 
 The common failure pattern: a company hires a branding agency, gets a beautiful visual identity and a brand book, and finds that 6 months later the sales team is still using their own words and marketing is producing content nobody reads.
 
-**The problem is that brand strategy and visual identity are confused.** A new logo doesn't change what you stand for. Messaging pillars in a PDF don't change how a sales rep talks to a prospect. According to a 2024 LinkedIn B2B Institute study, companies with clear, consistent brand positioning show 23% higher win rates in competitive deals — but consistency requires the strategy to be internalized, not filed.
+**The problem is that brand strategy and visual identity are confused.** A new logo doesn't change what you stand for. Messaging pillars in a PDF don't change how a sales rep talks to a prospect. In a competitive deal the company with consistent positioning wins more often than the one with better collateral. But consistency requires the strategy to be internalized, not filed.
 
 My approach: brand strategy is a working document, not a deliverable. It informs hiring, sales enablement, content, and every outbound touchpoint. If it doesn't change how the team talks about what they do, it hasn't worked.
 
