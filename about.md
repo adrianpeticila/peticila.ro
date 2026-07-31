@@ -6,7 +6,7 @@ Background
 
 ## who i am
 
-In my 20+ years of direct experience in marketing, PR, communications, and brand building across financial services, fintech, software, and B2B. I've personally built marketing functions from nothing and rebuilt ones that were bleeding deals in silence.
+20+ years in marketing, PR and communications. Financial services, fintech, B2B software. I've built marketing functions from nothing and rebuilt ones that were bleeding deals in silence.
 
 **3 CMO tracks.** Each one different: one greenfield, one turnaround, one scaling from regional to international. The pattern I keep finding: companies confuse brand with logo and positioning with tagline. I fix that.
 

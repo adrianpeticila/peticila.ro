@@ -26,7 +26,7 @@ Side projects built
 
 B2B marketing consulting is broad. My specific focus: companies selling to mid-market and enterprise, with deal cycles of 3-18 months, where the buyer is skeptical and the sales team is frustrated with marketing's output.
 
-The typical engagement starts with diagnosis — why isn't current demand gen working. According to a 2023 Forrester B2B study, **63% of B2B marketing leaders say pipeline quality, not quantity, is their primary challenge**. That's the gap I work in: between leads that look good on paper and deals that close.
+The typical engagement starts with diagnosis. Why isn't current demand gen working. The answer is almost never volume. **It's quality: leads that look good on paper and deals that never close.** That's the gap I work in.
 
 Core areas: positioning and messaging for technical products, outbound strategy for enterprise buyers, content that earns attention from skeptical decision-makers, and the alignment between marketing and sales that most companies talk about and few achieve.
 

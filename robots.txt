@@ -1,7 +1,17 @@
 User-agent: *
 Allow: /
 
-# AI crawlers — welcome, index everything
+# Search engines: skip the .md mirrors. Same content as the HTML pages,
+# kept for LLM crawlers, not meant to compete in the index.
+User-agent: Googlebot
+Allow: /
+Disallow: /*.md$
+
+User-agent: Bingbot
+Allow: /
+Disallow: /*.md$
+
+# AI crawlers — welcome, index everything, .md mirrors included
 User-agent: GPTBot
 Allow: /
 

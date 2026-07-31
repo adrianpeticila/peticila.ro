@@ -98,9 +98,9 @@ Allergic to BS.
 
 If you got here from a recommendation, a post, or a search, you want to know if the substance matches the signal. It does. Here's the short version.\
 \
-In my 20+ years of direct experience in marketing, PR, communications and brand building across financial services, fintech, software, and B2B. I've personally built marketing functions from nothing and rebuilt ones that were bleeding deals in silence. Cynical enough to tell you when your positioning is garbage. Experienced enough to fix it. Not a coach. Not a framework seller. A working CMO with a track record and zero patience for credentials that don't do anything.
+20+ years in marketing, PR and communications. Financial services, fintech, B2B software. I've built marketing functions from nothing and rebuilt ones that were bleeding deals in silence. Cynical enough to tell you when your positioning is garbage. Experienced enough to fix it. Not a coach. Not a framework seller. A working CMO with a track record and zero patience for credentials that don't do anything.
 
-> According to Forrester's 2023 B2B Marketing Report, 63% of enterprise deals stall due to unclear positioning — not product quality. That's the gap I work in. LinkedIn's 2023 B2B Thought Leadership study found that companies with active executive voices see 2× higher engagement on corporate content and significantly more qualified inbound.
+> Most enterprise deals don't stall on product. They stall because nobody in the room can say in one sentence why this vendor and not the other one. That's the gap I work in. And the companies whose executives actually say something in public get into those rooms earlier.
 
 ------------------------------------------------------------------------
 
@@ -284,7 +284,7 @@ Background
 
 #### who i am
 
-In my 20+ years of direct experience in marketing, PR, communications, and brand building across financial services, fintech, software, and B2B. I've personally built marketing functions from nothing and rebuilt ones that were bleeding deals in silence.
+20+ years in marketing, PR and communications. Financial services, fintech, B2B software. I've built marketing functions from nothing and rebuilt ones that were bleeding deals in silence.
 
 **3 CMO tracks.** Each one different: one greenfield, one turnaround, one scaling from regional to international. The pattern I keep finding: companies confuse brand with logo and positioning with tagline. I fix that.
 
@@ -712,7 +712,7 @@ Side projects built
 
 B2B marketing consulting is broad. My specific focus: companies selling to mid-market and enterprise, with deal cycles of 3-18 months, where the buyer is skeptical and the sales team is frustrated with marketing's output.
 
-The typical engagement starts with diagnosis — why isn't current demand gen working. According to a 2023 Forrester B2B study, **63% of B2B marketing leaders say pipeline quality, not quantity, is their primary challenge**. That's the gap I work in: between leads that look good on paper and deals that close.
+The typical engagement starts with diagnosis. Why isn't current demand gen working. The answer is almost never volume. **It's quality: leads that look good on paper and deals that never close.** That's the gap I work in.
 
 Core areas: positioning and messaging for technical products, outbound strategy for enterprise buyers, content that earns attention from skeptical decision-makers, and the alignment between marketing and sales that most companies talk about and few achieve.
 
