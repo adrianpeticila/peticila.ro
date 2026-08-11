@@ -36,6 +36,20 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://peticila.ro/#website",
+        "url": "https://peticila.ro/",
+        "name": "Adrian M. Peticila",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://peticila.ro/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
         "@type": "Person",
         "@id": "https://peticila.ro/#person",
         "name": "Adrian M. Peticila",
@@ -867,7 +881,7 @@
   <section id="hero">
     <div class="wrap">
       <span class="pg">P. 001 — Adrian M. Peticila</span>
-      <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Adrian M. Peticila. CMO and brand strategist. I find where brands lie to themselves.</h1>
+      <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">I find where brands lie to themselves.</h1>
       <div class="hero-name-wrap" id="nameWrap">
         <span class="fit-line name-first" id="fitFirst">adrian m.</span>
         <span class="fit-line name-last"  id="fitLast">peticila</span>
@@ -890,6 +904,11 @@
             Founder of <strong>Aah, Monster!</strong>. I apply the same thinking to the person running the company.
             If there's a fit, you'll know after three minutes on this page.
           </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#who" style="padding: 0.8rem 1.5rem; background: var(--fg); color: var(--bg); text-decoration: none; font-weight: bold; border-radius: 4px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem;">B2B Strategy</a>
+            <a href="/work/" style="padding: 0.8rem 1.5rem; border: 1px solid var(--fg); color: var(--fg); text-decoration: none; font-weight: bold; border-radius: 4px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem;">Current Projects</a>
+            <a href="#links" style="padding: 0.8rem 1.5rem; border: 1px solid var(--fg); color: var(--fg); text-decoration: none; font-weight: bold; border-radius: 4px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem;">Speaking / Media</a>
+          </div>
         </div>
         <dl class="hero-stats" aria-label="Career and track record statistics">
           <div class="stat-item">
