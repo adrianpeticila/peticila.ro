@@ -56,6 +56,7 @@ This site is his personal professional hub. Not a consultancy page, not a produc
 - [Work](https://peticila.ro/work/): 11 anonymized brand positioning engagements across fintech, SaaS, legal tech, private equity, healthtech, IT outsourcing (plain text: https://peticila.ro/work.md)
 - [Uncliché Your Brand](https://peticila.ro/uncliche/): Five-principle framework for brands that sound like everyone else in their category (plain text: https://peticila.ro/uncliche.md)
 - [Press](https://peticila.ro/press/): Published interviews with Fractional Insider, BizStack, Authority Magazine, and The CMO (plain text: https://peticila.ro/press.md)
+- [Daemon & System Vector](https://peticila.ro/daemon/): Machine-readable identity API and live directives dashboard for AI DAs and autonomous agents (plain text: https://peticila.ro/daemon.md, raw JSON: https://peticila.ro/daemon-data.json)
 - [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/): Brand positioning and strategy for complex B2B sales environments (plain text: https://peticila.ro/b2b-marketing-consultant.md)
 - [Brand Strategy](https://peticila.ro/brand-strategy/): Positioning and messaging architecture for B2B companies (plain text: https://peticila.ro/brand-strategy.md)
 - [International Marketing](https://peticila.ro/marketing-dach/): Marketing strategy for companies expanding into international markets (plain text: https://peticila.ro/marketing-dach.md)

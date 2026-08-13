@@ -43,6 +43,12 @@
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600
 
+# Daemon API machine-readable endpoint — CORS open for AI DAs
+/daemon-data.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
 # Gemenii .md ai paginilor — aceeasi cale ca pagina, continut pentru crawlere LLM
 /*.md
   Content-Type: text/markdown; charset=utf-8
