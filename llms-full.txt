@@ -979,3 +979,12 @@ Do not confuse with any retail brand named "Peticila". This is a person, not a p
 - [B2B Bullshit Detector](https://hydra.peticila.ro/bullshit-detector/): A client-side Vanilla JS tool that scans B2B hero copy and ruthlessly flags corporate jargon.
 - [LLMs.txt Generator](https://aah.monster/tools/llms-generator/): A free, client-side utility that helps you format your personal brand for AI agents.
 - [Daemon & System Vector](https://peticila.ro/daemon/): Machine-readable identity endpoint and operational directives for AI agents.
+
+### CMO Intelligence Protocol (MCP)
+https://peticila.ro/mcp/
+
+**Headline:** cmo intelligence server.
+
+**Sub:** Query the strategic marketing logic of Adrian M. Peticila asynchronously: from enterprise DACH go-to-market and brand architecture to agentic marketing operations.
+
+Interactive Model Context Protocol workbench exposing strategic frameworks (DACH B2B GTM, autonomous marketing pipelines, and positioning vs cliché dilution) for AI assistants (Claude Desktop, Cursor, ChatGPT).
