@@ -14,7 +14,7 @@ This site, peticila.ro, is his personal professional hub. Not a consultancy page
 
 ---
 
-## Stats Grid (as of July 2026)
+## Stats Grid (as of August 2026)
 
 | Stat | Label |
 |---|---|
@@ -53,7 +53,7 @@ adrian m. peticila
 
 CMO · Brand Strategist · Bucharest
 
-[Adrian M. Peticila](https://peticila.ro/) · Updated June 2026
+[Adrian M. Peticila](https://peticila.ro/) · Updated August 2026
 
 You're here for one of three reasons: someone passed my name along, you found something I wrote, or you're doing due diligence before a conversation. All three are fine.
 
@@ -851,14 +851,14 @@ Related
 - [Uncliché Your Brand](https://peticila.ro/uncliche/)
 
 ---
-## Right Now (as of July 2026)
+## Right Now (as of August 2026)
 
 | Label | What | Context |
 |---|---|---|
 | Listening | Iron Maiden + Eric Satie | moods, not playlists |
 | Reading | The Stranger | Camus. third time through |
 | Building | Hydra | B2B bullshit detector |
-| Thinking about | Why most personal brands are obituaries written in advance | |
+| Thinking about | Software got free. Taste didn't. | |
 | City | Bucharest, RO | loud, chaotic, occasionally brilliant |
 | Working | CMO | someone has to. |
 
