@@ -154,27 +154,27 @@ footer {
 <div class="wrap">
   <div class="eyebrow">// CMO Model Context Protocol</div>
   <h1>cmo intelligence server<em>.</em></h1>
-  <p class="sub">Interoghează asincron gândirea strategică de marketing a lui Adrian M. Peticila: de la expansiune enterprise DACH și arhitectură de brand, până la operațiuni de marketing bazate pe agenți autonomi.</p>
+  <p class="sub">Query the strategic marketing logic of Adrian M. Peticila asynchronously: from enterprise DACH go-to-market and brand architecture to agentic marketing operations.</p>
 
   <div class="panel">
-    <h2>Tester Protocol: get_cmo_intelligence</h2>
-    <label for="domain-select">Alege Domeniul Strategic:</label>
+    <h2>Protocol Tester: get_cmo_intelligence</h2>
+    <label for="domain-select">Select Strategic Domain:</label>
     <select id="domain-select">
       <option value="b2b_dach">DACH Enterprise Expansion (B2B Tech GTM)</option>
       <option value="agentic_marketing">Agentic Marketing Systems &amp; Autonomous AI</option>
       <option value="brand_positioning">Brand Positioning vs Cliché Dilution</option>
     </select>
 
-    <button class="btn-exec" id="exec-btn" type="button">Execută Interogare MCP</button>
+    <button class="btn-exec" id="exec-btn" type="button">Execute MCP Query</button>
 
     <div class="res-block" id="res-block"></div>
-    <p style="font-family: var(--mono); font-size: .75rem; color: var(--mid); margin-top: .75rem;">// răspuns afișat = simulare demo. Serverul real returnează date din surse live.</p>
+    <p style="font-family: var(--mono); font-size: .75rem; color: var(--mid); margin-top: .75rem;">// response shown = demo simulation. Real server returns live data.</p>
   </div>
 
   <div class="info-card">
-    <h3>Valoarea pentru Fondatori &amp; Decidenți C-Suite</h3>
+    <h3>Value for Founders &amp; C-Suite Executives</h3>
     <p>
-      Acest endpoint expune direct regulile și framework-urile aplicate de Adrian ca CMO la mindit.io și în consultanță. Permite asistenților AI (ChatGPT, Claude Desktop, Cursor) să integreze aceste principii direct în strategiile tale de go-to-market fără întâlniri introductive sterile.
+      This endpoint directly exposes the rules and frameworks applied by Adrian as CMO and advisor. It enables AI assistants (ChatGPT, Claude Desktop, Cursor) to integrate these principles directly into your go-to-market strategies without sterile introductory meetings.
     </p>
   </div>
 </div>
@@ -191,7 +191,7 @@ footer {
       <a href="/brand-strategy/">Brand Strategy</a>
       <a href="/marketing-dach/">International Marketing</a>
       <a href="/daemon/">Daemon</a>
-      <a href="/mcp/">MCP Tester</a>
+      <a href="/mcp/">MCP Protocol</a>
       <a href="https://hydra.peticila.ro/" target="_blank" rel="noopener">Hydra ↗</a>
     </div>
     <div class="footer-inner">
@@ -222,11 +222,15 @@ document.getElementById('exec-btn').addEventListener('click', () => {
   
   let payloadText = "";
   if (domain === "b2b_dach") {
-    payloadText = "Framework: DACH B2B Enterprise Expansion\nCore Thesis: Trust > Hype. Focus on GDPR compliance, verified reference accounts, direct founder engagement, and rigorous proof-of-concept delivery.\nPortfolio: https://peticila.ro";
+    payloadText = "Framework: DACH B2B Enterprise Expansion
+Core Thesis: Trust > Hype. Focus on GDPR compliance, verified reference accounts, direct founder engagement, and rigorous proof-of-concept delivery.
+Portfolio: https://peticila.ro";
   } else if (domain === "agentic_marketing") {
-    payloadText = "Framework: Agentic Marketing Operations\nCore Thesis: Autonomous loops replace fragmented SaaS. Specs-before-code, strict verification, zero synthetic fluff.";
+    payloadText = "Framework: Agentic Marketing Operations
+Core Thesis: Autonomous loops replace fragmented SaaS. Specs-before-code, strict verification, zero synthetic fluff.";
   } else {
-    payloadText = "Framework: Brand Positioning\nCore Thesis: I find where brands lie to themselves. Clarity beats cleverness.";
+    payloadText = "Framework: Brand Positioning
+Core Thesis: I find where brands lie to themselves. Clarity beats cleverness.";
   }
 
   const jsonRpcPayload = {
