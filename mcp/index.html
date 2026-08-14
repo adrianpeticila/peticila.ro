@@ -7,31 +7,78 @@
 <meta name="description" content="Model Context Protocol (MCP) server workbench for Adrian M. Peticila's CMO intelligence and B2B marketing frameworks.">
 <link rel="canonical" href="https://peticila.ro/mcp/">
 <link rel="icon" href="https://peticila.ro/favicon.svg" type="image/svg+xml">
-<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('peticila-theme') || 'light');</script>
+<link rel="preload" as="font" href="/fonts/Unbounded-900-normal.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="/fonts/BricolageGrotesque-400-normal.woff2" type="font/woff2" crossorigin>
+<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
 <style>
-@font-face { font-family:'Unbounded'; font-style:normal; font-weight:900; font-display:swap; src:url('https://peticila.ro/fonts/Unbounded-900-normal.woff2') format('woff2'); }
-@font-face { font-family:'DM Mono'; font-style:normal; font-weight:400; font-display:swap; src:url('https://peticila.ro/fonts/DMMono-400-normal.woff2') format('woff2'); }
-@font-face { font-family:'Bricolage Grotesque'; font-style:normal; font-weight:400; font-display:swap; src:url('https://peticila.ro/fonts/BricolageGrotesque-400-normal.woff2') format('woff2'); }
-@font-face { font-family:'Bricolage Grotesque'; font-style:normal; font-weight:600; font-display:swap; src:url('https://peticila.ro/fonts/BricolageGrotesque-600-normal.woff2') format('woff2'); }
+@font-face { font-family:'Unbounded'; font-style:normal; font-weight:900; font-display:swap; src:url('/fonts/Unbounded-900-normal.woff2') format('woff2'); }
+@font-face { font-family:'DM Mono'; font-style:normal; font-weight:400; font-display:swap; src:url('/fonts/DMMono-400-normal.woff2') format('woff2'); }
+@font-face { font-family:'DM Mono'; font-style:normal; font-weight:500; font-display:swap; src:url('/fonts/DMMono-500-normal.woff2') format('woff2'); }
+@font-face { font-family:'Bricolage Grotesque'; font-style:normal; font-weight:400; font-display:swap; src:url('/fonts/BricolageGrotesque-400-normal.woff2') format('woff2'); }
+@font-face { font-family:'Bricolage Grotesque'; font-style:normal; font-weight:600; font-display:swap; src:url('/fonts/BricolageGrotesque-600-normal.woff2') format('woff2'); }
 
 :root{
   --bg:#F5F4EF; --bg2:#ECEAE4; --fg:#060606; --mid:#555550; --faint:#C0BEB8;
   --rule:#D8D6D0; --red:#D42020; --ok:#1D6B3C;
   --name:'Unbounded',sans-serif; --body:'Bricolage Grotesque',sans-serif; --mono:'DM Mono',monospace;
 }
-:root[data-theme="dark"]{
+[data-theme="dark"]{
   --bg:#060606; --bg2:#0F0F0F; --fg:#F0EBE0; --mid:#909088; --faint:#3A3A38;
   --rule:#1A1A1A; --red:#D42020; --ok:#5FA36B;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;padding-bottom:5rem}
 a{color:inherit;text-decoration:none}
 
-nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 2rem;border-bottom:1px solid var(--rule)}
-.nav-id{font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid)}
-.nav-id b{color:var(--fg)}
-.btn-theme{background:none;border:1px solid var(--faint);padding:.3rem .7rem;font-family:var(--mono);font-size:.65rem;color:var(--mid);cursor:pointer}
+nav {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+}
+.nav-id {
+  font-family: var(--mono);
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--fg);
+}
+.nav-r {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.nav-a {
+  font-family: var(--mono);
+  font-size: .65rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--mid);
+  transition: color .15s;
+}
+.nav-a:hover, .nav-a.active { color: var(--fg); }
+.nav-theme {
+  background: none;
+  border: 1px solid var(--faint);
+  color: var(--mid);
+  font-family: var(--mono);
+  font-size: .6rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: .25rem .5rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: border-color .15s, color .15s;
+}
+.nav-theme:hover { border-color: var(--fg); color: var(--fg); }
 
 .wrap{max-width:920px;margin:0 auto;padding:4rem 1.5rem 0}
 .eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:1rem}
@@ -54,14 +101,54 @@ select{width:100%;padding:.8rem;font-family:var(--mono);font-size:.85rem;backgro
 .info-card h3{font-family:var(--mono);font-size:.85rem;font-weight:700;margin-bottom:.5rem;text-transform:uppercase}
 .info-card p{font-size:.95rem;color:var(--mid);line-height:1.6}
 
-footer{max-width:920px;margin:4rem auto 0;padding:2rem 1.5rem 0;border-top:1px solid var(--rule);font-family:var(--mono);font-size:.7rem;color:var(--mid);display:flex;justify-content:space-between}
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 3rem 0;
+  margin-top: 5rem;
+}
+.footer-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.footer-pages a {
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+.footer-pages a:hover { color: var(--fg); }
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="https://peticila.ro" class="nav-id">ADRIAN M. PETICILA <b>// MCP PROTOCOL</b></a>
-  <button class="btn-theme" id="theme-btn" type="button">THEME</button>
+  <a href="/" class="nav-id">peticila.ro</a>
+  <div class="nav-r">
+    <a href="/#who" class="nav-a">Who I am</a>
+    <a href="/#for" class="nav-a">Who this is for</a>
+    <a href="/manifesto/" class="nav-a">Manifesto</a>
+    <a href="/about/" class="nav-a">About</a>
+    <a href="/work/" class="nav-a">Work</a>
+    <a href="/mcp/" class="nav-a active">MCP</a>
+    <a href="https://aah.monster" target="_blank" rel="noopener" class="nav-a">aah.monster ↗</a>
+    <button class="nav-theme" id="themeBtn">light</button>
+  </div>
 </nav>
 
 <div class="wrap">
@@ -93,17 +180,42 @@ footer{max-width:920px;margin:4rem auto 0;padding:2rem 1.5rem 0;border-top:1px s
 </div>
 
 <footer>
-  <div>Adrian M. Peticila · CMO mindit.io</div>
-  <div><a href="https://peticila.ro/daemon/">Daemon Live ↗</a></div>
+  <div class="wrap" style="padding-top: 0;">
+    <div class="footer-pages">
+      <a href="/about/">About</a>
+      <a href="/manifesto/">Manifesto</a>
+      <a href="/work/">Work</a>
+      <a href="/uncliche/">Uncliché Your Brand</a>
+      <a href="/press/">Press</a>
+      <a href="/b2b-marketing-consultant/">B2B Marketing Consultant</a>
+      <a href="/brand-strategy/">Brand Strategy</a>
+      <a href="/marketing-dach/">International Marketing</a>
+      <a href="/daemon/">Daemon</a>
+      <a href="/mcp/">MCP Tester</a>
+      <a href="https://hydra.peticila.ro/" target="_blank" rel="noopener">Hydra ↗</a>
+    </div>
+    <div class="footer-inner">
+      <span>Published by <a rel="author" href="/about/" style="color:inherit;text-decoration:underline;">Adrian M. Peticila</a> &copy; 2026</span>
+      <span><time datetime="2026-08-01">Updated August 2026</time></span>
+      <a href="https://www.linkedin.com/in/adrian-peticila/" rel="me noopener" target="_blank">LinkedIn</a>
+      <a href="mailto:adrian@peticila.ro">adrian@peticila.ro</a>
+    </div>
+  </div>
 </footer>
 
 <script>
-document.getElementById('theme-btn').addEventListener('click', () => {
-  const current = document.documentElement.getAttribute('data-theme') || 'light';
-  const next = current === 'dark' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', next);
-  localStorage.setItem('peticila-theme', next);
-});
+(function(){
+  var btn = document.getElementById('themeBtn');
+  var saved = localStorage.getItem('theme');
+  var pref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  var theme = saved || pref;
+  if(theme === 'light'){ document.documentElement.setAttribute('data-theme','light'); btn.textContent = 'dark'; }
+  btn.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme');
+    if(cur === 'light'){ document.documentElement.removeAttribute('data-theme'); btn.textContent = 'light'; localStorage.setItem('theme','dark'); }
+    else { document.documentElement.setAttribute('data-theme','light'); btn.textContent = 'dark'; localStorage.setItem('theme','light'); }
+  });
+})();
 
 document.getElementById('exec-btn').addEventListener('click', () => {
   const domain = document.getElementById('domain-select').value;
