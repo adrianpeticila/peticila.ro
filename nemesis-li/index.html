@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nemesis LI · Adrian M. Peticila</title>
+  <meta name="description" content="A free LinkedIn profile grader. Paste your profile and the jobs you target. Get a letter grade and the single biggest fix. No account, no server, no upload. Runs in your browser.">
+  <link rel="canonical" href="https://peticila.ro/nemesis-li/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://peticila.ro/nemesis-li/">
+  <meta property="og:title" content="Personal Daemon · Adrian M. Peticila">
+  <meta property="og:description" content="Machine-readable identity API and live directives. Built for AI agents that need truth and humans who don't want marketing lies.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Adrian M. Peticila">
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Adrian_M._Peticila_2026.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@adrianmpeticila">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#060606">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F4EF">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="author" content="Adrian M. Peticila">
+  <meta name="date" content="2026-08-13">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://peticila.ro/nemesis-li/#tool",
+        "url": "https://peticila.ro/nemesis-li/",
+        "name": "Nemesis LI",
+        "description": "A free LinkedIn profile grader. Paste your profile and target job descriptions for a letter grade and paste-ready fixes.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any (runs in browser)",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free grade. Full report: $19 (payment integration pending)." },
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://peticila.ro/#website" },
+        "author": { "@id": "https://peticila.ro/#person" },
+        "dateModified": "2026-08-15"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://peticila.ro/" },
+          { "@type": "ListItem", "position": 2, "name": "Nemesis LI", "item": "https://peticila.ro/nemesis-li/" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" as="font" href="../fonts/Unbounded-900-normal.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="../fonts/BricolageGrotesque-400-normal.woff2" type="font/woff2" crossorigin>
+  <style>
+    :root {
+      --bg:    #060606;
+      --bg2:   #0F0F0F;
+      --fg:    #F0EBE0;
+      --mid:   #909088;
+      --faint: #3A3A38;
+      --red:   #D42020;
+      --rule:  #1A1A1A;
+      --mono:  'DM Mono', monospace;
+      --body:  'Bricolage Grotesque', sans-serif;
+      --disp:  'Unbounded', sans-serif;
+      --name:  'Unbounded', sans-serif;
+    }
+    [data-theme="light"] {
+      --bg:    #F5F4EF;
+      --bg2:   #ECEAE4;
+      --fg:    #060606;
+      --mid:   #555550;
+      --faint: #C0BEB8;
+      --rule:  #D8D6D0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    @font-face { font-family: 'Unbounded'; font-style: normal; font-weight: 900; font-display: swap; src: url('../fonts/Unbounded-900-normal.woff2') format('woff2'), url('/fonts/Unbounded-900-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'DM Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/DMMono-400-normal.woff2') format('woff2'), url('/fonts/DMMono-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'DM Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/DMMono-500-normal.woff2') format('woff2'), url('/fonts/DMMono-500-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/BricolageGrotesque-400-normal.woff2') format('woff2'), url('/fonts/BricolageGrotesque-400-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/BricolageGrotesque-500-normal.woff2') format('woff2'), url('/fonts/BricolageGrotesque-500-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/BricolageGrotesque-600-normal.woff2') format('woff2'), url('/fonts/BricolageGrotesque-600-normal.woff2') format('woff2'); }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip-link { position: absolute; top: -100%; left: 1rem; background: var(--red); color: #fff; padding: 0.5rem 1rem; font-size: 0.875rem; font-family: monospace; border-radius: 0 0 4px 4px; z-index: 9999; text-decoration: none; }
+    .skip-link:focus { top: 0; }
+    body { font-family: var(--body); background: var(--bg); color: var(--fg); line-height: 1.5; -webkit-font-smoothing: antialiased; transition: background .3s, color .3s; }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 2.5rem; border-bottom: 1px solid var(--rule); background: var(--bg); transition: background .3s; }
+    .nav-id { font-family: var(--mono); font-size: .65rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--mid); }
+    .nav-r { display: flex; align-items: center; gap: 2rem; }
+    .nav-a { font-family: var(--mono); font-size: .65rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); transition: color .15s; }
+    .nav-a:hover, .nav-a.active { color: var(--fg); }
+    .nav-theme { background: none; border: 1px solid var(--faint); color: var(--mid); font-family: var(--mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; padding: .35rem .7rem; cursor: pointer; transition: border-color .15s, color .15s; }
+    .nav-theme:hover { border-color: var(--fg); color: var(--fg); }
+
+    /* WRAP */
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 2.5rem; }
+
+    /* MAIN */
+    main { padding-top: 100px; padding-bottom: 6rem; }
+
+    /* PAGE HEADER */
+    .pg-header {
+      border-bottom: 1px solid var(--rule);
+      padding: 3rem 0 2.5rem;
+      margin-bottom: 4rem;
+    }
+    .pg-marker {
+      font-family: var(--mono); font-size: .58rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--red);
+      margin-bottom: 1.5rem;
+    }
+    .pg-title {
+      font-family: var(--name); font-size: clamp(2rem, 6vw, 4.5rem); font-weight: 900; letter-spacing: -.02em; text-transform: lowercase; line-height: .95;
+      color: var(--fg);
+      margin-bottom: 1.5rem;
+    }
+    .pg-deck {
+      font-family: var(--body); font-size: 1rem; color: var(--mid); line-height: 1.7; max-width: 560px;
+    }
+
+    /* CONTENT */
+    .m-section { margin-bottom: 4rem; }
+    .m-label {
+      font-family: var(--mono); font-size: .58rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--mid);
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .m-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+    .m-section h2 { font-family: var(--name); font-size: clamp(1.2rem, 2.5vw, 1.8rem); font-weight: 900; letter-spacing: -.02em; text-transform: lowercase; color: var(--fg); margin-bottom: 1.25rem; line-height: 1.1; }
+    .m-section p { font-size: 1rem; line-height: 1.75; color: var(--fg); margin-bottom: 1rem; opacity: .85; }
+    .m-section p:last-child { margin-bottom: 0; }
+    .m-pull { font-family: var(--name); font-size: clamp(.9rem, 2vw, 1.1rem); font-weight: 900; text-transform: lowercase; letter-spacing: -.01em; color: var(--red); margin: 2rem 0; line-height: 1.3; }
+    .m-section .m-pull { color: var(--red); opacity: 1; }
+
+    /* CTA */
+    .cta-strip { background: var(--bg2); border: 1px solid var(--rule); padding: 2.5rem; margin-top: 5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; }
+    .cta-strip p { font-size: .85rem; color: var(--mid); line-height: 1.6; }
+    .cta-strip a { font-family: var(--mono); font-size: .65rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; background: var(--red); color: #fff; padding: .75rem 1.5rem; white-space: nowrap; flex-shrink: 0; transition: opacity .2s; }
+    .cta-strip a:hover { opacity: .8; }
+
+    /* FOOTER */
+    footer { padding: 2.5rem 0; border-top: 1px solid var(--rule); }
+    .footer-pages { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .footer-pages span { font-family: var(--mono); font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
+    .footer-pages a { font-family: var(--mono); font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); transition: color .15s; }
+    .footer-pages a:hover { color: var(--red); }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-family: var(--mono); font-size: .62rem; color: var(--mid); letter-spacing: .06em; }
+    .footer-inner a { color: var(--mid); transition: color .15s; }
+    .footer-inner a:hover { color: var(--fg); }
+
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-r .nav-a { display: none; }
+      .wrap { padding: 0 1.25rem; }
+      .cta-strip { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav>
+    <a href="/" class="nav-id">peticila.ro</a>
+    <div class="nav-r">
+      <a href="/work/" class="nav-a">Work</a>
+      <a href="/brand-strategy/" class="nav-a">Strategy</a>
+      <a href="/uncliche/" class="nav-a">Uncliché</a>
+      <a href="/manifesto/" class="nav-a">Manifesto</a>
+      <a href="/about/" class="nav-a">About</a>
+      <a href="/daemon/" class="nav-a">Daemon</a>
+      <a href="https://aah.monster" target="_blank" rel="noopener" class="nav-a">aah.monster ↗</a>
+      <button class="nav-theme" id="themeBtn">dark</button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <h1 class="sr-only">Adrian M. Peticila. I find where brands lie to themselves.</h1>
+    <div class="wrap">
+      <header class="pg-header">
+        <p class="pg-marker">tool / nemesis li</p>
+        <p class="pg-title">nemesis li.<br>linkedin grader.</p>
+        <p class="pg-deck">recruiters search by exact titles and keywords. if they can't find you, nobody tells you. paste your profile and the jobs you actually want. get a letter grade and the single biggest fix. no account, no server, no upload. everything stays in your browser.</p>
+      </header>
+      <div style="background:var(--bg2);border:1px solid var(--rule);padding:2.5rem;margin:2rem 0 3rem;">
+        <label for="profile" style="font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:.5rem;">Your LinkedIn profile (paste full text)</label>
+        <textarea id="profile" placeholder="Paste your LinkedIn headline, about, experience, skills..." style="width:100%;background:var(--bg);border:1px solid var(--rule);color:var(--fg);font-family:var(--mono);font-size:.85rem;line-height:1.6;padding:1rem;resize:vertical;min-height:120px;margin-bottom:1.5rem;"></textarea>
+        <label for="jd1" style="font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:.5rem;">Job description 1 (the role you want)</label>
+        <textarea id="jd1" placeholder="Paste a job description you are targeting..." style="width:100%;background:var(--bg);border:1px solid var(--rule);color:var(--fg);font-family:var(--mono);font-size:.85rem;line-height:1.6;padding:1rem;resize:vertical;min-height:100px;margin-bottom:1.5rem;"></textarea>
+        <label for="jd2" style="font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:.5rem;">Job description 2 (optional)</label>
+        <textarea id="jd2" placeholder="Paste another target job description (optional)..." style="width:100%;background:var(--bg);border:1px solid var(--rule);color:var(--fg);font-family:var(--mono);font-size:.85rem;line-height:1.6;padding:1rem;resize:vertical;min-height:80px;margin-bottom:1.5rem;"></textarea>
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;"><input type="checkbox" id="otw" style="width:18px;height:18px;"><label for="otw" style="font-family:var(--mono);font-size:.8rem;color:var(--mid);">I have Open to Work enabled</label></div>
+        <button id="gradeBtn" style="font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;border:none;padding:.75rem 1.5rem;cursor:pointer;">Grade my profile</button>
+      </div>
+      <div id="gradeOutput" style="display:none;margin-top:2.5rem;border-top:1px solid var(--rule);padding-top:2.5rem;">
+        <p style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);margin-bottom:1rem;">your grade</p>
+        <div id="gradeLetter" style="font-family:var(--name);font-weight:900;font-size:clamp(4rem,15vw,8rem);line-height:.9;color:var(--red);">A</div>
+        <p id="gradeFix" style="font-size:1.1rem;color:var(--fg);margin:1rem 0 2rem;line-height:1.6;"></p>
+        <div id="lockedList" style="position:relative;filter:blur(4px);pointer-events:none;opacity:.6;">
+          <p style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);margin-bottom:.5rem;">full fix list (7 ranked fixes)</p>
+          <ol id="fullFixList" style="padding-left:1.5rem;color:var(--mid);font-size:.9rem;line-height:1.8;"></ol>
+        </div>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;pointer-events:none;">
+          <p style="font-family:var(--mono);font-size:.7rem;color:var(--mid);letter-spacing:.1em;text-transform:uppercase;">full report locked</p>
+          <a href="https://buy.stripe.com/placeholder_nemesis" target="_blank" rel="noopener" style="pointer-events:auto;font-family:var(--mono);font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;padding:.75rem 1.5rem;text-decoration:none;">Get the full report - $19</a>
+          <p style="font-family:var(--mono);font-size:.55rem;color:var(--faint);letter-spacing:.08em;">payment integration coming soon</p>
+        </div>
+      </div>
+      <section class="m-section">
+        <p class="m-label">how it works</p>
+        <h2>three steps, no fluff.</h2>
+        <p>copy your full LinkedIn profile text. headline, about, experience, skills. no link needed, just the text.</p>
+        <p>paste one to three job descriptions you are targeting. the grader compares your profile against the actual roles you want.</p>
+        <p>you get an A-F letter grade based on keyword overlap, headline quality, summary completeness, and action verbs. the single biggest fix is free. the full list is unlocked at $19.</p>
+      </section>
+      <section class="m-section">
+        <p class="m-label">honest limitations</p>
+        <h2>what this won't do.</h2>
+        <p>it is not a human recruiter reading your profile. it catches structural problems, not strategic ones.</p>
+        <p>it does not simulate ATS parsing. it checks keyword overlap and profile structure.</p>
+        <p>a high grade does not guarantee interviews. a low grade does not mean you are unqualified. it means your profile is not working hard enough.</p>
+        <p>nothing is uploaded. nothing is stored. the grading runs entirely in your browser and dies when you close the tab.</p>
+      </section>
+      <div class="cta-strip">
+        <p>questions, or want a human read on your positioning? get in touch.</p>
+        <a href="mailto:adrian@peticila.ro">adrian@peticila.ro</a>
+      </div>
+    </div>
+</main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-pages">
+        <span>Pages</span>
+        <a href="/about/">About</a>
+        <a href="/manifesto/">Manifesto</a>
+        <a href="/work/">Work</a>
+        <a href="/uncliche/">Uncliché Your Brand</a>
+        <a href="/press/">Press</a>
+        <a href="/daemon/">Daemon</a>
+        <a href="/b2b-marketing-consultant/">B2B Marketing Consultant</a>
+        <a href="/brand-strategy/">Brand Strategy</a>
+        <a href="/marketing-dach/">International Marketing</a>
+      </div>
+      <div class="footer-inner">
+        <span>Published by <a rel="author" href="/about/" style="color:inherit;text-decoration:underline;">Adrian M. Peticila</a> &copy; 2026</span>
+        <span><time datetime="2026-08-01">Updated August 2026</time></span>
+        <span>
+          <a href="https://www.linkedin.com/in/adrian-peticila/" rel="me noopener" target="_blank">LinkedIn</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://aah.monster">aah.monster</a>
+          &nbsp;&middot;&nbsp;
+          Contact: <a href="mailto:adrian@peticila.ro">adrian@peticila.ro</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // theme toggle
+    var themeBtn = document.getElementById('themeBtn');
+    var htmlEl = document.documentElement;
+    var themeKey = 'peticila-theme';
+    var savedTheme = localStorage.getItem(themeKey);
+    var initialTheme = savedTheme ? savedTheme : 'light';
+    htmlEl.setAttribute('data-theme', initialTheme);
+    themeBtn.textContent = initialTheme === 'dark' ? 'light' : 'dark';
+    themeBtn.addEventListener('click', function() {
+      var nextTheme = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-theme', nextTheme);
+      localStorage.setItem(themeKey, nextTheme);
+      themeBtn.textContent = nextTheme === 'dark' ? 'light' : 'dark';
+    });
+
+    document.getElementById("gradeBtn").addEventListener("click", function() {
+      var p = document.getElementById("profile").value;
+      var jd = [document.getElementById("jd1").value, document.getElementById("jd2").value].filter(function(x){return x.trim();});
+      if(!p.trim() || jd.length === 0) { alert("Paste your LinkedIn profile and at least one job description."); return; }
+      var stop = new Set(["the","a","an","and","or","but","in","on","at","to","for","of","with","by","from","as","is","are","was","were","be","been","being","have","has","had","do","does","did","will","would","could","should","this","that","these","those","i","you","he","she","it","we","they","my","your","his","her","its","our","their","not","no","so","than","too","very","just","also","only","up","out","if","then","else","when","where","why","how","what","which","who","whom","about","into","over","after","before","between","through","during","above","below","off","down","more","most","other","some","such","only","own","same","new","now","old","see","seen","per","via","etc"]);
+      function tokens(t){ return (t||"").toLowerCase().match(/[a-z][a-z0-9+#.-]{2,}/g) || []; }
+      function wf(t){ var w={}; tokens(t).forEach(function(x){ if(!stop.has(x)) w[x]=(w[x]||0)+1; }); return w; }
+      var pw = wf(p), jdw = {};
+      jd.forEach(function(j){ var w = wf(j); for(var k in w) jdw[k] = (jdw[k]||0) + w[k]; });
+      var jdk = Object.keys(jdw).sort(function(a,b){return jdw[b]-jdw[a];}).slice(0,20);
+      var overlap = 0; jdk.forEach(function(k){ if(pw[k]) overlap++; });
+      var overlapPct = jdk.length ? overlap/jdk.length : 0;
+      var headline = (p.split("\n")[0]||"").trim();
+      var actionV = ["led","built","created","launched","grew","increased","reduced","improved","managed","developed","designed","implemented","drove","achieved","delivered","optimized","streamlined","established","founded","scaled"];
+      var verbs = 0; var pl = tokens(p).map(function(x){return x.replace(/[^a-z]/g,"");}); actionV.forEach(function(v){ if(pl.indexOf(v) >= 0) verbs++; });
+      var otw = document.getElementById("otw").checked;
+      var score = 0;
+      score += overlapPct * 35;
+      score += (headline.length >= 15 && headline.length <= 120) ? 25 : Math.max(0, 25 - Math.abs(headline.length - 67) * 0.5);
+      score += (p.length >= 200 && p.length <= 3000) ? 20 : Math.max(5, 20 - Math.abs(p.length - 1600) * 0.01);
+      score += Math.min(verbs, 5) * 4;
+      score = Math.round(Math.max(0, Math.min(100, score)));
+      var letter = score >= 85 ? "A" : score >= 70 ? "B" : score >= 55 ? "C" : score >= 40 ? "D" : "F";
+      var missing = jdk.filter(function(k){ return !pw[k]; }).slice(0, 5);
+      var fix = "";
+      if(overlapPct < 0.3) fix = "Your profile does not contain enough of the keywords recruiters actually search for. Add these terms: " + missing.join(", ") + ".";
+      else if(headline.length < 15) fix = "Your headline is too short. Recruiters search by exact title. Put the job title you want in the first line.";
+      else if(p.length < 200) fix = "Your profile is too sparse. Add concrete experience with action verbs and quantified results.";
+      else if(verbs < 2) fix = "Your profile lacks action verbs. Replace passive descriptions with led, built, grew, increased, delivered.";
+      else fix = "Your profile is structurally sound. The gap is likely strategic, not keyword-based. Consider a positioning read.";
+      var fixes = ["Headline: include the exact job title from the JDs","Add keywords: " + missing.join(", "),"Expand your About section to 200-2000 characters","Use action verbs: led, built, grew, increased, delivered","Quantify achievements with numbers and timeframes","Add the top 3 skills from the JDs to your Skills section","If Open to Work, list the exact target job titles"];
+      document.getElementById("gradeLetter").textContent = letter;
+      document.getElementById("gradeFix").textContent = fix;
+      var list = document.getElementById("fullFixList"); list.innerHTML = "";
+      fixes.forEach(function(f){ var li = document.createElement("li"); li.textContent = f; list.appendChild(li); });
+      document.getElementById("gradeOutput").style.display = "block";
+      document.getElementById("gradeOutput").scrollIntoView({behavior:"smooth"});
+    });
+</script>
+</body>
+</html>

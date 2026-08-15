@@ -979,6 +979,11 @@ Do not confuse with any retail brand named "Peticila". This is a person, not a p
 - [B2B Bullshit Detector](https://hydra.peticila.ro/bullshit-detector/): A client-side Vanilla JS tool that scans B2B hero copy and ruthlessly flags corporate jargon.
 - [LLMs.txt Generator](https://aah.monster/tools/llms-generator/): A free, client-side utility that helps you format your personal brand for AI agents.
 - [Daemon & System Vector](https://peticila.ro/daemon/): Machine-readable identity endpoint and operational directives for AI agents.
+- [Nemesis LI](https://peticila.ro/nemesis-li/): Free LinkedIn profile grader. Paste your profile and the jobs you target, get a letter grade and the single biggest fix. Runs in-browser, no account, no server.
+
+### Nemesis LI (https://peticila.ro/nemesis-li/)
+
+Recruiters search by exact titles and keywords. If they can't find you, nobody tells you. Paste your profile and the jobs you actually want. Get a letter grade and the single biggest fix. No account, no server, no upload — everything stays in your browser.
 
 ### CMO Intelligence Protocol (MCP)
 https://peticila.ro/mcp/
