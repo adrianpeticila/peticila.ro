@@ -17,6 +17,10 @@ This is the hub. Who I am, what I do, where to find me. Everything else I make l
 - `/daemon/`: Machine-readable personal daemon, runtime directives, and JSON API for AI agents and digital assistants (JSON: `daemon-data.json`, plain text: `daemon.md`).
 - `/brand-strategy/` & `/b2b-marketing-consultant/`: B2B strategy and positioning specialties.
 
+## Free tool
+
+- [Nemesis LI](https://peticila.ro/nemesis-li/): a free LinkedIn profile grader. Paste your profile and the jobs you actually want, get a letter grade and the single biggest fix. No account, no server, no upload — everything stays in your browser.
+
 **Stack:** HTML, CSS, vanilla JS. Cloudflare Workers. Cloudflare DNS. A personal site doesn't need a bundler. It needs a point of view.
 
 Built and maintained with an AI pair, supervised by [Gorgona](https://github.com/adrianpeticila/gorgona), the operating system that runs all my brands.
