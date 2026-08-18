@@ -17,9 +17,21 @@ This is the hub. Who I am, what I do, where to find me. Everything else I make l
 - `/daemon/`: Machine-readable personal daemon, runtime directives, and JSON API for AI agents and digital assistants (JSON: `daemon-data.json`, plain text: `daemon.md`).
 - `/brand-strategy/` & `/b2b-marketing-consultant/`: B2B strategy and positioning specialties.
 
-## Free tool
+## Tools & Project Shelf
 
-- [Nemesis LI](https://peticila.ro/nemesis-li/): a free LinkedIn profile grader. Paste your profile and the jobs you actually want, get a letter grade and the single biggest fix. No account, no server, no upload — everything stays in your browser.
+- [Nemesis LI](https://peticila.ro/nemesis-li/): Free LinkedIn profile grader. Paste your profile and the jobs you want, get a letter grade and the single biggest fix. Zero server upload, runs entirely in browser.
+- [Hydra](https://hydra.peticila.ro/): The project shelf of brand and operator tools running client-side with zero dependencies:
+  - [Chasm](https://hydra.peticila.ro/chasm/): Deterministic editorial gate as code (blocks AI slop, corporate cliches, and rhythm collapse).
+  - [Tyche](https://hydra.peticila.ro/tyche/): B2B executive hook bank and cognitive tension scoring engine.
+  - [Cadmus](https://hydra.peticila.ro/cadmus/): Content ROI behavior audit (saves, shares, qualified inquiries).
+  - [Athena](https://hydra.peticila.ro/athena/): Deterministic OpenGraph cards and brand covers in pure vector SVG.
+  - [Aeolus](https://hydra.peticila.ro/aeolus/): Pre-merge branch diff auditor for AI coding agents.
+  - [Slop Detector](https://hydra.peticila.ro/slop/): Deterministic lexical marker and cadence audit.
+  - [Canon](https://hydra.peticila.ro/canon/): Brand canon builder and contradiction detector.
+  - [The Guilt Trip](https://hydra.peticila.ro/guilt/): Dark pattern and emotional pressure audit for product copy.
+  - [Deck Rubric](https://hydra.peticila.ro/deck/): 11-point pitch deck diagnostic.
+  - [AI Demand Map](https://hydra.peticila.ro/demand/): Strategic taxonomy mapping high-intent queries against underserved whitespace.
+  - [Homepage Roaster](https://hydra.peticila.ro/roast/): Automated inspection of positioning clarity and friction.
 
 **Stack:** HTML, CSS, vanilla JS. Cloudflare Workers. Cloudflare DNS. A personal site doesn't need a bundler. It needs a point of view.
 
