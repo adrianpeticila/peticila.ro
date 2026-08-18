@@ -60,8 +60,7 @@ This site is his personal professional hub. Not a consultancy page, not a produc
 - [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/): Brand positioning and strategy for complex B2B sales environments (plain text: https://peticila.ro/b2b-marketing-consultant.md)
 - [Brand Strategy](https://peticila.ro/brand-strategy/): Positioning and messaging architecture for B2B companies (plain text: https://peticila.ro/brand-strategy.md)
 - [International Marketing](https://peticila.ro/marketing-dach/): Marketing strategy for companies expanding into international markets (plain text: https://peticila.ro/marketing-dach.md)
-- [CMO Intelligence Protocol (MCP)](https://peticila.ro/mcp/): Interactive Model Context Protocol workbench exposing strategic frameworks (DACH GTM, agentic operations, positioning) for AI agents and LLMs
-- [B2B Bullshit Detector (Hydra)](https://hydra.peticila.ro/): A specialized B2B text analysis tool and personal project shelf.
+- [Hydra Project Shelf](https://hydra.peticila.ro/): A specialized personal project shelf containing 10 free browser tools including Slop Detector, Chasm (editorial gate), Tyche (hook bank), Cadmus (content ROI), Athena (SVG asset engine), Canon, The Guilt Trip, and Deck Rubric.
 
 ---
 
