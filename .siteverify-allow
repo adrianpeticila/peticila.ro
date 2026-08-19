@@ -1,5 +1,5 @@
 # Fisiere care ajung in setul de publicare dar sunt legitime.
-# Verificat cu curl inainte de a fi trecute aici — nu presupune, probeaza.
+# Verificat cu curl inainte de a fi trecute aici - nu presupune, probeaza.
 
 # Config de platforma Cloudflare Workers: consumat de runtime, NU servit.
 # https://peticila.ro/_headers si /_redirects intorc 404. _headers e sursa
@@ -10,6 +10,7 @@ _redirects
 # Gemenii .md ai paginilor: acelasi continut ca HTML-ul, servit pentru
 # crawlere LLM. Generati de gen_md_twins.py, nu editati de mana.
 about.md
+about.json
 b2b-marketing-consultant.md
 brand-strategy.md
 daemon.md

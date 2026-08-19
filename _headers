@@ -1,18 +1,18 @@
-# Cloudflare Pages — custom headers
+# Cloudflare Pages - custom headers
 # Most security headers are set via Cloudflare Transform Rules (S53).
-# HSTS added here (S122) — was missing from the Transform Rule set.
+# HSTS added here (S122) - was missing from the Transform Rule set.
 # This file handles MIME types, CORS, and cache for static assets.
 
-# HSTS — force HTTPS for 1 year (no preload, reversible)
+# HSTS - force HTTPS for 1 year (no preload, reversible)
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
-# Self-hosted fonts — CORS required for @font-face cross-origin
+# Self-hosted fonts - CORS required for @font-face cross-origin
 /fonts/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=31536000, immutable
 
-# Static assets — immutable long cache
+# Static assets - immutable long cache
 /favicon.svg
   Cache-Control: public, max-age=31536000, immutable
 
@@ -27,7 +27,7 @@
   Content-Type: application/manifest+json; charset=utf-8
   Cache-Control: public, max-age=86400
 
-# Robots, sitemap, llms — short cache
+# Robots, sitemap, llms - short cache
 /robots.txt
   Cache-Control: public, max-age=3600
 
@@ -43,18 +43,24 @@
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600
 
-# Daemon API machine-readable endpoint — CORS open for AI DAs
+# Daemon API machine-readable endpoint - CORS open for AI DAs
 /daemon-data.json
   Content-Type: application/json; charset=utf-8
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=3600
 
-# Gemenii .md ai paginilor — aceeasi cale ca pagina, continut pentru crawlere LLM
+# Machine-readable profile - CORS open for AI DAs
+/about.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# Gemenii .md ai paginilor - aceeasi cale ca pagina, continut pentru crawlere LLM
 /*.md
   Content-Type: text/markdown; charset=utf-8
   Cache-Control: public, max-age=3600
 
-# .well-known — JSON except security.txt
+# .well-known - JSON except security.txt
 /.well-known/agent-skills-discovery
   Content-Type: application/json; charset=utf-8
   Access-Control-Allow-Origin: *
@@ -64,7 +70,7 @@
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=86400
 
-# HTML — no cache (always fresh)
+# HTML - no cache (always fresh)
 /
   Cache-Control: public, max-age=0, must-revalidate
 

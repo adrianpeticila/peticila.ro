@@ -6,6 +6,7 @@
   <title>About · Adrian M. Peticila, CMO & Brand Strategist</title>
   <meta name="description" content="20+ years in marketing. 3 CMO tracks. Financial services, fintech, B2B software. Founder of Aah, Monster! personal branding consultancy. Based in Bucharest.">
   <link rel="canonical" href="https://peticila.ro/about/">
+  <link rel="alternate" type="application/json" href="https://peticila.ro/about.json" title="Adrian M. Peticila - Machine-readable profile">
   <meta name="author" content="Adrian M. Peticila">
   <meta name="date" content="2026-06-03">
   <meta property="og:type" content="profile">
@@ -29,7 +30,7 @@
         "alternateName": ["Adrian Peticila", "Adrian M Peticila"],
         "url": "https://peticila.ro/",
         "jobTitle": "CMO & Brand Strategist",
-        "disambiguatingDescription": "Adrian M. Peticila is a Romanian marketing executive and brand strategist (CMO) with 20+ years of experience — a person, not a retail store or product brand, and not an academic, agronomist, or horticulture researcher. His field is marketing, branding, and positioning across financial services, fintech, and B2B software. Founder of Aah, Monster! personal branding consultancy.",
+        "disambiguatingDescription": "Adrian M. Peticila is a Romanian marketing executive and brand strategist (CMO) with 20+ years of experience - a person, not a retail store or product brand, and not an academic, agronomist, or horticulture researcher. His field is marketing, branding, and positioning across financial services, fintech, and B2B software. Founder of Aah, Monster! personal branding consultancy.",
         "nationality": "Romanian",
         "homeLocation": {
           "@type": "Place",
@@ -64,7 +65,7 @@
           },
           {
             "@type": "Article",
-            "headline": "Adrian M. Peticila — CMO, Brand Strategist & Founder of Aah, Monster!",
+            "headline": "Adrian M. Peticila - CMO, Brand Strategist & Founder of Aah, Monster!",
             "url": "https://bizstack.tech/adrian-m-peticila/",
             "publisher": { "@type": "Organization", "name": "BizStack" }
           },
@@ -225,9 +226,101 @@
     .footer-inner a { color: var(--mid); text-decoration: none; }
     .footer-inner a:hover { color: var(--fg); }
 
+    /* Bio Switcher */
+    .bio-switcher { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+    .bio-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .bio-tab {
+      background: var(--bg2);
+      border: 1px solid var(--rule);
+      color: var(--mid);
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      padding: 0.45rem 0.85rem;
+      cursor: pointer;
+      transition: all .15s ease;
+      text-transform: uppercase;
+    }
+    .bio-tab:hover {
+      border-color: var(--mid);
+      color: var(--fg);
+    }
+    .bio-tab.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .bio-box {
+      background: var(--bg2);
+      border: 1px solid var(--rule);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      position: relative;
+    }
+    .bio-box-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.65rem;
+    }
+    .bio-word-count {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    .bio-copy-btn {
+      background: none;
+      border: 1px solid var(--faint);
+      color: var(--fg);
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      cursor: pointer;
+      transition: all .15s ease;
+    }
+    .bio-copy-btn:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+    .bio-copy-btn.copied {
+      background: var(--red);
+      border-color: var(--red);
+      color: #FFFFFF;
+    }
+    .bio-text {
+      font-family: var(--body);
+      font-size: 0.95rem;
+      color: var(--fg);
+      line-height: 1.7;
+      min-height: 4rem;
+    }
+    .bio-footer {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      color: var(--faint);
+    }
+    .bio-json-link {
+      color: var(--mid);
+      text-decoration: underline;
+    }
+    .bio-json-link:hover {
+      color: var(--fg);
+    }
+
     @media (max-width: 600px) {
       .stat-grid { grid-template-columns: 1fr 1fr; }
       .profile-list { grid-template-columns: 1fr; }
+      .bio-tabs { gap: 0.35rem; }
+      .bio-tab { font-size: 0.65rem; padding: 0.35rem 0.65rem; }
       nav { padding: 1rem 1.5rem; }
       .wrap { padding: 0 1.5rem; }
       .hero { padding: 3rem 0 2rem; }
@@ -278,6 +371,34 @@
       </div>
     </section>
 
+    <section class="section" id="bios">
+      <span class="section-tag">Bios</span>
+      <h2>alternate bios</h2>
+      <p>Standard bios for intros, events, press, and speaker profiles. Select a format and copy.</p>
+
+      <div class="bio-switcher">
+        <div class="bio-tabs" role="tablist" aria-label="Bio format options">
+          <button class="bio-tab active" role="tab" aria-selected="true" aria-controls="bioText" data-format="one_line">1-Line</button>
+          <button class="bio-tab" role="tab" aria-selected="false" aria-controls="bioText" data-format="short_50_word">50-Word</button>
+          <button class="bio-tab" role="tab" aria-selected="false" aria-controls="bioText" data-format="official_100_word">100-Word</button>
+          <button class="bio-tab" role="tab" aria-selected="false" aria-controls="bioText" data-format="speaker">Speaker Bio</button>
+          <button class="bio-tab" role="tab" aria-selected="false" aria-controls="bioText" data-format="press">Press Bio</button>
+        </div>
+
+        <div class="bio-box">
+          <div class="bio-box-header">
+            <span class="bio-word-count" id="bioCount">14 words</span>
+            <button class="bio-copy-btn" id="bioCopyBtn" aria-label="Copy bio to clipboard">Copy</button>
+          </div>
+          <div class="bio-text" id="bioText" role="tabpanel" tabindex="0">CMO and brand strategist with 20+ years building and scaling B2B, fintech, and financial brands.</div>
+        </div>
+
+        <div class="bio-footer">
+          <span class="bio-machine-note">Machine-readable profile: <a href="/about.json" class="bio-json-link">about.json</a></span>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <span class="section-tag">Side work</span>
       <h2>aah, monster!</h2>
@@ -295,7 +416,7 @@
         </div>
         <div class="press-item">
           <span class="press-source">BizStack</span>
-          <a href="https://bizstack.tech/adrian-m-peticila/" class="press-title" target="_blank" rel="noopener">Adrian M. Peticila — CMO, Brand Strategist & Founder of Aah, Monster!</a>
+          <a href="https://bizstack.tech/adrian-m-peticila/" class="press-title" target="_blank" rel="noopener">Adrian M. Peticila - CMO, Brand Strategist & Founder of Aah, Monster!</a>
         </div>
       </div>
     </section>
@@ -349,7 +470,7 @@
     </div>
     <div class="footer-inner">
       <span>Published by <a rel="author" href="https://peticila.ro/">Adrian M. Peticila</a> © 2026</span>
-      <span><time datetime="2026-08-01">Updated August 2026</time></span>
+      <span><time datetime="2026-08-19">Updated August 2026</time></span>
       <span><a href="https://www.linkedin.com/in/adrian-peticila/" rel="me noopener" target="_blank" style="color:var(--mid);">LinkedIn</a> &nbsp;&middot;&nbsp; Contact: adrian@peticila.ro</span>
     </div>
   </div>
@@ -368,6 +489,52 @@
     html.setAttribute('data-theme', next);
     localStorage.setItem(key, next);
     btn.textContent = next === 'dark' ? '◑ light' : '◑ dark';
+  });
+
+  const bios = {
+    one_line: "CMO and brand strategist with 20+ years building and scaling B2B, fintech, and financial brands.",
+    short_50_word: "Adrian M. Peticila is a CMO and brand strategist with 20+ years across B2B software, fintech, and financial services. Founder of Aah, Monster!, an executive personal branding consultancy. Known for turning complex positioning into sharp, defensible market authority.",
+    official_100_word: "Adrian M. Peticila is a Chief Marketing Officer and brand strategist with over two decades of experience building, repositioning, and scaling B2B technology, fintech, and financial services brands. Having led marketing functions across three distinct CMO tracks (greenfield build, turnaround, and international expansion), he advises founders and C-suite leaders on positioning, go-to-market strategy, and executive authority. He is the founder of Aah, Monster!, a no-bullshit personal branding consultancy, and writes on marketing strategy, positioning, and AI workflows.",
+    speaker: "Adrian M. Peticila is a veteran CMO, brand strategist, and founder of Aah, Monster! With 20+ years steering B2B, fintech, and software brands across five continents, Adrian speaks on positioning without fluff, executive authority in the AI era, and building marketing architectures that actually close revenue.",
+    press: "Adrian M. Peticila is a Romanian marketing executive, CMO, and brand strategist based in Bucharest. With a 20+ year track record spanning financial services, B2B SaaS, and fintech turnaround, he is the founder of personal branding advisory Aah, Monster! and author of executive guides on positioning."
+  };
+
+  const bioTextEl = document.getElementById('bioText');
+  const bioCountEl = document.getElementById('bioCount');
+  const bioCopyBtn = document.getElementById('bioCopyBtn');
+  const bioTabs = document.querySelectorAll('.bio-tab');
+
+  function updateWordCount(text) {
+    const count = text.trim().split(/\\s+/).filter(Boolean).length;
+    bioCountEl.textContent = count + (count === 1 ? ' word' : ' words');
+  }
+
+  bioTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      bioTabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      const format = tab.getAttribute('data-format');
+      const text = bios[format] || '';
+      bioTextEl.textContent = text;
+      updateWordCount(text);
+    });
+  });
+
+  bioCopyBtn.addEventListener('click', () => {
+    const currentText = bioTextEl.textContent;
+    navigator.clipboard.writeText(currentText).then(() => {
+      const originalText = bioCopyBtn.textContent;
+      bioCopyBtn.textContent = 'Copied!';
+      bioCopyBtn.classList.add('copied');
+      setTimeout(() => {
+        bioCopyBtn.textContent = originalText;
+        bioCopyBtn.classList.remove('copied');
+      }, 2000);
+    });
   });
 </script>
 </body>
