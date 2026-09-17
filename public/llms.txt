@@ -1,0 +1,13 @@
+# peticila.ro
+> Adrian Peticila - B2B Fractional CMO and Go-to-Market Strategist for European tech companies expanding to DACH.
+
+## Core Services
+- Fractional CMO: Strategic leadership, pipeline acceleration, enterprise positioning.
+- DACH Market Expansion: Enterprise sales cycles, localized positioning, ABM infrastructure.
+- Marketing Due Diligence: Growth auditing for PE/VC portfolio companies.
+
+## Links
+- Homepage: https://peticila.ro/
+- Strategy Manifesto: https://peticila.ro/manifesto
+- Case Studies: https://peticila.ro/work
+- Full LLM Documentation: https://peticila.ro/llms-full.txt
