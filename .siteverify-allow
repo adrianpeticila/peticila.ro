@@ -11,10 +11,12 @@ _redirects
 # crawlere LLM. Generati de gen_md_twins.py, nu editati de mana.
 about.md
 about.json
+b2b-growth.md
 b2b-marketing-consultant.md
 brand-strategy.md
 daemon.md
 daemon-data.json
+fractional-cmo.md
 index.md
 manifesto.md
 marketing-dach.md

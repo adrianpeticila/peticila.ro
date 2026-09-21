@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Adrian M. Peticila",
+  "description": "CMO, B2B Brand Strategist, and Advisory Consultant. Provides positioning briefs, advisory estimations, and case studies for B2B tech and scaleups.",
+  "version": "1.0.0",
+  "homepage": "https://peticila.ro/",
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": true
+  },
+  "tools": [
+    {
+      "name": "submit_brief",
+      "description": "Submit a B2B marketing and positioning brief for strategic evaluation and advisory review.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "company_name": {
+            "type": "string",
+            "description": "Name of the company or startup."
+          },
+          "industry": {
+            "type": "string",
+            "description": "Industry or vertical (e.g., B2B SaaS, HealthTech, FinTech, DevTools)."
+          },
+          "revenue_stage": {
+            "type": "string",
+            "description": "Current revenue stage (e.g., Pre-revenue, EUR 0-1M ARR, EUR 1M-10M ARR, EUR 10M+ ARR)."
+          },
+          "main_challenge": {
+            "type": "string",
+            "description": "Primary marketing, positioning, or growth challenge."
+          },
+          "contact_email": {
+            "type": "string",
+            "format": "email",
+            "description": "Contact email address for follow-up."
+          }
+        },
+        "required": [
+          "company_name",
+          "main_challenge",
+          "contact_email"
+        ]
+      }
+    },
+    {
+      "name": "calculate_advisory_estimate",
+      "description": "Calculates an advisory project estimate based on service scope, team size, and project duration.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "service_type": {
+            "type": "string",
+            "enum": [
+              "positioning_sprint",
+              "fractional_cmo",
+              "brand_audit",
+              "gtm_strategy"
+            ],
+            "description": "Type of advisory engagement."
+          },
+          "team_size": {
+            "type": "integer",
+            "description": "Number of marketing/sales team members involved."
+          },
+          "duration_weeks": {
+            "type": "integer",
+            "description": "Estimated duration of engagement in weeks."
+          }
+        },
+        "required": [
+          "service_type"
+        ]
+      }
+    },
+    {
+      "name": "list_case_studies",
+      "description": "Returns verified B2B positioning and marketing case studies, metrics, and advisory outcomes.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "industry": {
+            "type": "string",
+            "description": "Filter by industry vertical (e.g., B2B, DACH, Tech, Services, all)."
+          },
+          "objective": {
+            "type": "string",
+            "description": "Filter by strategic objective (e.g., repositioning, international_expansion, lead_gen, all)."
+          }
+        }
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "https://peticila.ro/llms.txt",
+      "name": "Adrian M. Peticila llms.txt Context",
+      "mimeType": "text/plain",
+      "description": "Machine-readable context specification about Adrian M. Peticila background, expertise, and advisory framework."
+    }
+  ]
+}
