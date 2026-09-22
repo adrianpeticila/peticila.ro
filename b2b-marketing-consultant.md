@@ -57,7 +57,6 @@ If your pipeline is stalling or your positioning isn't landing with enterprise b
 Related
 
 - [Brand Strategy](https://peticila.ro/brand-strategy/)
-- [International Marketing](https://peticila.ro/marketing-dach/)
 - [Uncliché Your Brand](https://peticila.ro/uncliche/)
 
 ---

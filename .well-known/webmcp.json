@@ -83,7 +83,7 @@
         "properties": {
           "industry": {
             "type": "string",
-            "description": "Filter by industry vertical (e.g., B2B, DACH, Tech, Services, all)."
+            "description": "Filter by industry vertical (e.g., B2B, Tech, Services, Enterprise, all)."
           },
           "objective": {
             "type": "string",

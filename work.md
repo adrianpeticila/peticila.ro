@@ -48,7 +48,7 @@ A year in: 4,200 followers in the right segment, three inbound enterprise inquir
 
 > "Difficult to explain to my CFO. But real."
 
-Enterprise legal in DACH moves slowly. We set that expectation on day one.
+Enterprise legal in international markets moves slowly. We set that expectation on day one.
 
 04
 

@@ -69,7 +69,6 @@ Related Specialties
 - [B2B Growth](https://peticila.ro/b2b-growth/)
 - [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/)
 - [Brand Strategy](https://peticila.ro/brand-strategy/)
-- [International Marketing](https://peticila.ro/marketing-dach/)
 - [Uncliché Your Brand](https://peticila.ro/uncliche/)
 
 ---

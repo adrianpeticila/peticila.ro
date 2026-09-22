@@ -68,7 +68,6 @@ If your pipeline is stalling or deals are vanishing into procurement review, the
 
 Related Specialties
 
-- [International Marketing](https://peticila.ro/marketing-dach/)
 - [Fractional CMO](https://peticila.ro/fractional-cmo/)
 - [B2B Marketing Consultant](https://peticila.ro/b2b-marketing-consultant/)
 - [Brand Strategy](https://peticila.ro/brand-strategy/)

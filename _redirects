@@ -1,2 +1,6 @@
-# Cloudflare Pages redirects
+# Cloudflare Pages / Workers static assets redirects
 # www → apex is handled automatically by Cloudflare custom domain settings
+
+/marketing-dach/ /b2b-growth/ 301
+/marketing-dach /b2b-growth/ 301
+/marketing-dach.md /b2b-growth.md 301

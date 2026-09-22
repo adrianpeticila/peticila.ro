@@ -47,7 +47,6 @@ If your brand strategy is a PDF nobody opens, let's build one that the team actu
 Related
 
 - [B2B Marketing Consulting](https://peticila.ro/b2b-marketing-consultant/)
-- [International Marketing](https://peticila.ro/marketing-dach/)
 - [Uncliché Your Brand](https://peticila.ro/uncliche/)
 
 ---
