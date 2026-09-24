@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "peticilaro",
+  "main": "worker.js",
   "compatibility_date": "2026-06-02",
   "observability": {
     "enabled": true
@@ -10,5 +11,11 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "AGENT_STORE",
+      "id": "peticilaro_agent_store"
+    }
   ]
 }

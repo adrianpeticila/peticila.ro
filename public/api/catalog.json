@@ -1,0 +1,29 @@
+[
+  {
+    "id": "consulting-1on1",
+    "name": "1:1 Strategic Consulting & Positioning Audit",
+    "price_cents": 49900,
+    "currency": "USD",
+    "description": "Direct 1:1 strategic positioning audit and go-to-market architecture advisory with written synthesis.",
+    "sample_output_url": "https://peticila.ro/work/",
+    "checkout_type": "stripe_hosted"
+  },
+  {
+    "id": "b2b-marketing-blueprint",
+    "name": "B2B Marketing Blueprint & Framework",
+    "price_cents": 19900,
+    "currency": "USD",
+    "description": "Comprehensive enterprise B2B marketing blueprint and go-to-market positioning framework.",
+    "sample_output_url": "https://peticila.ro/mcp/",
+    "checkout_type": "stripe_hosted"
+  },
+  {
+    "id": "strategic-funnel-roast",
+    "name": "Strategic Funnel Roast",
+    "price_cents": 4900,
+    "currency": "USD",
+    "description": "Programmatic tear-down and diagnostic roast of positioning, messaging friction, and funnel mechanics.",
+    "sample_output_url": "https://peticila.ro/daemon/",
+    "checkout_type": "x402"
+  }
+]

@@ -25,3 +25,7 @@ work.md
 nemesis-li/index.md
 .well-known/webmcp
 .well-known/webmcp.json
+
+# Agentic commerce catalog
+api/catalog.json
+public/api/catalog.json
