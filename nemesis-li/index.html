@@ -195,7 +195,10 @@
         <label for="jd2" style="font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:.5rem;">Job description 2 (optional)</label>
         <textarea id="jd2" placeholder="Paste another target job description (optional)..." style="width:100%;background:var(--bg);border:1px solid var(--rule);color:var(--fg);font-family:var(--mono);font-size:.85rem;line-height:1.6;padding:1rem;resize:vertical;min-height:80px;margin-bottom:1.5rem;"></textarea>
         <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;"><input type="checkbox" id="otw" style="width:18px;height:18px;"><label for="otw" style="font-family:var(--mono);font-size:.8rem;color:var(--mid);">I have Open to Work enabled</label></div>
-        <button id="gradeBtn" style="font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;border:none;padding:.75rem 1.5rem;cursor:pointer;">Grade my profile</button>
+        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+          <button id="gradeBtn" style="font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;border:none;padding:.75rem 1.5rem;cursor:pointer;">Grade my profile</button>
+          <a id="stripeBtnTop" href="https://buy.stripe.com/28EfZh0IVecu4I8gI9aIM08" target="_blank" rel="noopener" style="display:none;font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;padding:.75rem 1.5rem;text-decoration:none;">Get the full report - $19</a>
+        </div>
       </div>
       <div id="gradeOutput" style="display:none;margin-top:2.5rem;border-top:1px solid var(--rule);padding-top:2.5rem;">
         <p style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);margin-bottom:1rem;">your grade</p>
@@ -315,6 +318,20 @@
       document.getElementById("gradeOutput").style.display = "block";
       document.getElementById("gradeOutput").scrollIntoView({behavior:"smooth"});
     });
+
+    var profileEl = document.getElementById("profile");
+    var stripeBtnTop = document.getElementById("stripeBtnTop");
+    function updateStripeVisibility() {
+      if (profileEl && stripeBtnTop) {
+        stripeBtnTop.style.display = profileEl.value.trim().length > 0 ? "inline-block" : "none";
+      }
+    }
+    if (profileEl) {
+      profileEl.addEventListener("input", updateStripeVisibility);
+      profileEl.addEventListener("paste", function() { setTimeout(updateStripeVisibility, 50); });
+      profileEl.addEventListener("change", updateStripeVisibility);
+      updateStripeVisibility();
+    }
 </script>
 </body>
 </html>
