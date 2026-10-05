@@ -28,7 +28,7 @@ A free LinkedIn profile grader. Paste your profile and the jobs you are actually
 - Letter grade A-F with estimated score out of 100
 - Single biggest fix recommendation (free)
 - Missing keywords from JDs worth adding
-- Full fix list (5-7 items) behind a $19 unlock (placeholder - Stripe not yet wired)
+- Full fix list (5-7 items) behind a $19 unlock via Stripe
 
 **Data privacy:** All processing happens client-side. No data is sent to any server.
 
@@ -47,7 +47,7 @@ A free LinkedIn profile grader. Paste your profile and the jobs you are actually
 - This is a heuristic tool with simple keyword scoring. It does not understand nuance, context, or industry-specific terminology.
 - It does not connect to the LinkedIn API. It only analyzes what you paste.
 - The grading is a rough heuristic, not a scientific assessment.
-- The full fix report behind the $19 paywall is not yet generated - the overlay is a placeholder.
+- The full fix report and tailored rewrites are delivered async after payment.
 
 ---
 
