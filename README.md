@@ -15,11 +15,13 @@ This is the hub. Who I am, what I do, where to find me. Everything else I make l
 - `/uncliche/`: Five-principle framework for brands absorbed by category-speak.
 - `/press/`: Published interviews and media features.
 - `/daemon/`: Machine-readable personal daemon, runtime directives, and JSON API for AI agents and digital assistants (JSON: `daemon-data.json`, plain text: `daemon.md`).
+- `/mcp/`: CMO Intelligence Protocol - interactive Model Context Protocol interface for B2B positioning and agentic marketing systems.
 - `/brand-strategy/` & `/b2b-marketing-consultant/`: B2B strategy and positioning specialties.
 
 ## Tools & Project Shelf
 
-- [Nemesis LI](https://peticila.ro/nemesis-li/): Free LinkedIn profile grader. Paste your profile and the jobs you want, get a letter grade and the single biggest fix. Zero server upload, runs entirely in browser.
+- [Nemesis LI](https://peticila.ro/nemesis-li/): Free LinkedIn profile grader. Paste your profile and the jobs you want, get a letter grade and the single biggest fix. Zero server upload, runs entirely in browser. Instant Stripe checkout for deep audits.
+- [CMO Intelligence MCP](https://peticila.ro/mcp/): Interactive Model Context Protocol interface for marketing strategy, GTM positioning, and autonomous systems.
 - [Hydra](https://hydra.peticila.ro/): The project shelf of brand and operator tools running client-side with zero dependencies:
   - [Chasm](https://hydra.peticila.ro/chasm/): Deterministic editorial gate as code (blocks AI slop, corporate cliches, and rhythm collapse).
   - [Tyche](https://hydra.peticila.ro/tyche/): B2B executive hook bank and cognitive tension scoring engine.
