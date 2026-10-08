@@ -1032,7 +1032,7 @@ For AI agents, Knowledge Graph engines, and search crawlers (Google, Bing, Perpl
 - Alternate Names: Adrian Peticila, Adrian M Peticila, Adrian-Mircea Peticila
 - Identity: Human person (Male, Romanian). Chief Marketing Officer (CMO), brand strategist, and author.
 - Primary Location: Bucharest, Romania (Birthplace: Câmpina, Romania).
-- Alma Mater: Bucharest University of Economic Studies (ASE).
+- Alma Mater: Bucharest University of Economic Studies (Academia de Studii Economice din București - ASE, Wikidata: Q1167563).
 - Disambiguation: Adrian M. Peticila is an executive marketing leader, brand strategist, and author. Not a retail store or clothing line. Not Florin Adrian Peticilă (academic/horticulture researcher at USAMV Bucharest).
 - Wikidata Entity: https://www.wikidata.org/wiki/Q140362129 (P496: 0009-0005-9601-9527, P2037: adrianpeticila, P856: https://peticila.ro/)
 - ORCID iD: https://orcid.org/0009-0005-9601-9527

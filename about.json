@@ -17,6 +17,7 @@
     "quora": "https://www.quora.com/profile/Adrian-M-Peticila",
     "qwoted": "https://app.qwoted.com/sources/adrian-m-peticila",
     "wikidata": "https://www.wikidata.org/wiki/Q140362129",
+    "orcid": "https://orcid.org/0009-0005-9601-9527",
     "indieweb": "https://indieweb.org/User:Peticila.ro",
     "goodreads": "https://www.goodreads.com/user/show/186180125-adrian-m-peticila",
     "soundcloud": "https://soundcloud.com/adrian-m-peticila",
@@ -40,7 +41,8 @@
     "name": "Adrian M. Peticila",
     "alternateName": [
       "Adrian Peticila",
-      "Adrian M Peticila"
+      "Adrian M Peticila",
+      "Adrian-Mircea Peticila"
     ],
     "url": "https://peticila.ro/",
     "jobTitle": "CMO & Brand Strategist",
@@ -61,8 +63,18 @@
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "Bucharest University of Economic Studies",
-      "alternateName": "Academia de Studii Economice din București",
-      "sameAs": "https://ro.wikipedia.org/wiki/Academia_de_Studii_Economice_din_Bucure%C8%99ti"
+      "alternateName": [
+        "Academia de Studii Economice din București",
+        "Academia de Studii Economice",
+        "ASE București",
+        "ASE"
+      ],
+      "sameAs": [
+        "https://ase.ro",
+        "https://ro.wikipedia.org/wiki/Academia_de_Studii_Economice_din_Bucure%C8%99ti",
+        "https://en.wikipedia.org/wiki/Bucharest_University_of_Economic_Studies",
+        "https://www.wikidata.org/wiki/Q1167563"
+      ]
     },
     "sameAs": [
       "https://www.linkedin.com/in/adrian-peticila/",
@@ -78,6 +90,7 @@
       "https://www.quora.com/profile/Adrian-M-Peticila",
       "https://app.qwoted.com/sources/adrian-m-peticila",
       "https://www.wikidata.org/wiki/Q140362129",
+      "https://orcid.org/0009-0005-9601-9527",
       "https://commons.wikimedia.org/wiki/File:Adrian_M._Peticila_2026.png",
       "https://indieweb.org/User:Peticila.ro",
       "https://www.goodreads.com/user/show/186180125-adrian-m-peticila",
