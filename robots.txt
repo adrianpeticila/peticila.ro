@@ -5,6 +5,8 @@ Allow: /
 # kept for LLM crawlers, not meant to compete in the index.
 User-agent: Googlebot
 Allow: /
+Allow: /faq/
+Allow: /nemesis-li/faq/
 Disallow: /*.md$
 
 User-agent: Bingbot
@@ -14,12 +16,16 @@ Disallow: /*.md$
 # AI crawlers - welcome, index everything, .md mirrors included
 User-agent: GPTBot
 Allow: /
+Allow: /faq/
+Allow: /nemesis-li/faq/
 
 User-agent: ChatGPT-User
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
+Allow: /faq/
+Allow: /nemesis-li/faq/
 
 User-agent: anthropic-ai
 Allow: /
@@ -29,6 +35,8 @@ Allow: /
 
 User-agent: PerplexityBot
 Allow: /
+Allow: /faq/
+Allow: /nemesis-li/faq/
 
 User-agent: Applebot-Extended
 Allow: /
