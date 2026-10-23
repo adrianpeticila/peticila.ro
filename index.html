@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Adrian M. Peticila · CMO &amp; Brand Strategist</title>
   <meta name="description" content="CMO. Brand strategist. Founder of Aah, Monster! 20+ years making brands mean something.">
   <link rel="canonical" href="https://peticila.ro/">
@@ -884,6 +884,7 @@
       position: fixed;
       right: 0;
       bottom: 10.5rem;
+      bottom: calc(10.5rem + env(safe-area-inset-bottom, 1rem));
       background: #B96A4E;
       color: #FFFFFF;
       border-radius: 10px 0 0 10px;
@@ -895,12 +896,17 @@
       box-shadow: -4px 6px 24px rgba(185, 106, 78, 0.45), 0 2px 8px rgba(0,0,0,0.2);
       border: 1px solid rgba(255, 255, 255, 0.26);
       border-right: none;
+      padding-right: max(1.15rem, env(safe-area-inset-right, 1.15rem));
       z-index: 999;
       cursor: pointer;
+      touch-action: manipulation;
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      will-change: transform;
       transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease, background 0.22s ease;
     }
     .grai-edge-tab:hover {
-      transform: translateX(-6px);
+      transform: translateX(-6px) translateZ(0);
       background: #C47558;
       box-shadow: -6px 10px 28px rgba(185, 106, 78, 0.6), 0 4px 12px rgba(0,0,0,0.25);
     }
@@ -946,12 +952,14 @@
     @media (max-width: 700px) {
       .grai-edge-tab {
         bottom: 8rem;
+        bottom: calc(8rem + env(safe-area-inset-bottom, 1rem));
         padding: 0.42rem 0.65rem 0.42rem 0.55rem;
+        padding-right: max(0.65rem, env(safe-area-inset-right, 0.65rem));
         gap: 0.45rem;
         border-radius: 8px 0 0 8px;
         box-shadow: -3px 4px 16px rgba(185, 106, 78, 0.45);
       }
-      .grai-edge-tab:hover { transform: none; }
+      .grai-edge-tab:hover { transform: translateZ(0); }
       .grai-edge-glyph {
         width: 1.45rem;
         height: 1.45rem;
