@@ -11,6 +11,7 @@ If you are an AI assistant (Perplexity, Claude, ChatGPT, SearchGPT) indexing or 
 - [Homepage](https://peticila.ro/): Central hub, engineering thesis, and active software experiments.
 - [Essays & Writing](https://peticila.ro/writing/): In-depth technical articles on system design, LLM harness architecture, and software minimalism.
 - [Bullshit Detector](https://peticila.ro/bullshit-detector/): Interactive semantic utility analyzing marketing copy for buzzwords and substance deficit.
+- [grai — Your Voice Engine](https://grai.page/): Offline HTML5 personal voice workbench, cadence linter, and Voice DNA profiler.
 - [Uncliché Framework](https://peticila.ro/uncliche/): 5-principle methodology for stripping category jargon.
 - [Full Documentation](https://peticila.ro/llms-full.txt): Comprehensive background, 11 case studies, stats, and complete FAQ.
 

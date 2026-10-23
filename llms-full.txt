@@ -1060,6 +1060,7 @@ Do not confuse with any retail brand named "Peticila". This is a person, not a p
 
 ## Tools & Utilities
 
+- [grai — Your Voice Engine](https://grai.page/): 100% offline HTML5 personal voice workbench, Voice DNA profiler, and deterministic 6-rule cadence gate. Repository: https://github.com/adrianpeticila/grai
 - [B2B Bullshit Detector](https://hydra.peticila.ro/bullshit-detector/): A client-side Vanilla JS tool that scans B2B hero copy and ruthlessly flags corporate jargon.
 - [LLMs.txt Generator](https://aah.monster/tools/llms-generator/): A free, client-side utility that helps you format your personal brand for AI agents.
 - [Daemon & System Vector](https://peticila.ro/daemon/): Machine-readable identity endpoint and operational directives for AI agents.
