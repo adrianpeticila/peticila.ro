@@ -290,6 +290,8 @@
     @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/BricolageGrotesque-400-normal.woff2') format('woff2'); }
     @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/BricolageGrotesque-500-normal.woff2') format('woff2'); }
     @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/BricolageGrotesque-600-normal.woff2') format('woff2'); }
+    @font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/fraunces-latin.woff2') format('woff2'); }
+    @font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/jetbrains-mono-latin.woff2') format('woff2'); }
     html { font-size: 16px; scroll-behavior: smooth; }
     .skip-link { position: absolute; top: -100%; left: 1rem; background: var(--red); color: #fff; padding: 0.5rem 1rem; font-size: 0.875rem; font-family: monospace; border-radius: 0 0 4px 4px; z-index: 9999; text-decoration: none; }
     .skip-link:focus { top: 0; }
@@ -874,7 +876,107 @@
       .hydra-stamp svg { width: 1.8rem; height: 1.8rem; }
       .hydra-stamp-label { font-size: .82rem; }
     }
+
+    /* ── GRAI EDGE TAB ───────────── */
+    .grai-edge-tab {
+      position: fixed;
+      right: 0;
+      bottom: 10.5rem;
+      background: #B96A4E;
+      color: #FFFFFF;
+      border-radius: 10px 0 0 10px;
+      padding: 0.75rem 1.15rem 0.75rem 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      box-shadow: -4px 6px 24px rgba(185, 106, 78, 0.45), 0 2px 8px rgba(0,0,0,0.2);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-right: none;
+      z-index: 180;
+      cursor: pointer;
+      transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease, background 0.22s ease;
+    }
+    .grai-edge-tab:hover {
+      transform: translateX(-6px);
+      background: #C47558;
+      box-shadow: -6px 10px 28px rgba(185, 106, 78, 0.6), 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .grai-edge-glyph {
+      width: 2.1rem;
+      height: 2.1rem;
+      display: block;
+      flex-shrink: 0;
+    }
+    .grai-edge-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .grai-edge-brand {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+      line-height: 0.95;
+      color: #FAF8F5;
+      letter-spacing: -0.02em;
+    }
+    .grai-edge-caption {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #F8EBE4;
+      opacity: 0.95;
+      white-space: nowrap;
+    }
+    .grai-edge-arrow {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #F8EBE4;
+      transition: transform 0.18s ease;
+      padding-left: 0.15rem;
+    }
+    .grai-edge-tab:hover .grai-edge-arrow {
+      transform: translateX(3px);
+    }
+    @media (max-width: 700px) {
+      .grai-edge-tab {
+        bottom: 8rem;
+        padding: 0.42rem 0.65rem 0.42rem 0.55rem;
+        gap: 0.45rem;
+        border-radius: 8px 0 0 8px;
+        box-shadow: -3px 4px 16px rgba(185, 106, 78, 0.45);
+      }
+      .grai-edge-tab:hover { transform: none; }
+      .grai-edge-glyph {
+        width: 1.45rem;
+        height: 1.45rem;
+      }
+      .grai-edge-brand {
+        font-size: 1.15rem;
+      }
+      .grai-edge-caption {
+        display: none;
+      }
+      .grai-edge-arrow {
+        font-size: 0.8rem;
+      }
+    }
   </style>
+  <a class="grai-edge-tab" href="https://grai.page" target="_blank" rel="noopener" aria-label="grai — your voice engine">
+    <svg class="grai-edge-glyph" viewBox="0 0 1024 1024" role="img" aria-hidden="true" focusable="false">
+      <g transform="translate(0 1024) scale(.1 -.1)" fill="#FAF8F5">
+        <path d="M7146 8345 c-733 -119 -1268 -630 -1681 -1605 -80 -188 -99 -223 -133 -242 -26 -16 -59 -18 -259 -18 -338 0 -574 -19 -878 -71 -884 -149 -1632 -521 -2068 -1029 -280 -325 -426 -660 -478 -1093 -14 -122 -7 -421 14 -532 79 -420 243 -727 545 -1016 511 -491 1293 -773 2358 -850 220 -15 856 -7 1069 15 1044 107 1845 449 2332 995 246 276 406 624 453 985 12 97 16 380 5 472 -30 263 -84 460 -185 669 -279 579 -866 1025 -1665 1265 -93 28 -180 58 -193 66 -28 18 -45 59 -37 88 45 157 137 282 255 345 84 45 173 62 320 62 140 1 180 -5 425 -61 265 -60 331 -71 455 -71 236 0 418 66 567 205 94 88 161 187 198 297 25 73 29 103 33 225 4 122 1 151 -17 220 -95 348 -357 568 -791 665 -126 28 -506 36 -644 14z m-1891 -2624 c384 -79 649 -373 760 -844 92 -391 94 -1007 5 -1386 -91 -387 -285 -658 -564 -786 -237 -110 -603 -109 -844 1 -336 154 -534 474 -609 989 -23 153 -26 766 -5 910 60 411 166 675 346 863 130 137 271 214 467 257 97 21 334 19 444 -4z"/>
+      </g>
+    </svg>
+    <div class="grai-edge-body">
+      <span class="grai-edge-brand">grai</span>
+      <span class="grai-edge-caption">your voice engine</span>
+    </div>
+    <span class="grai-edge-arrow" aria-hidden="true">→</span>
+  </a>
   <a class="hydra-stamp" href="https://hydra.peticila.ro" target="_blank" rel="noopener" aria-label="Hydra — the side project shelf">
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M32 54 C32 40 32 34 32 26" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
